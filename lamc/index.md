@@ -2,7 +2,7 @@
 layout: default
 title: Home
 permalink: /lamc/
-banner: true
+banner: home
 legacy_router: true
 ---
 

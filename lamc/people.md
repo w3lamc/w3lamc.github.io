@@ -2,6 +2,7 @@
 layout: default
 title: People
 permalink: /lamc/people/
+banner: people
 ---
 
 - Jiri Macas (principal investigator, macas@umbr.cas.cz)

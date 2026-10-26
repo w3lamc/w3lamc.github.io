@@ -1,6 +1,24 @@
-# Images rotating in the banner on the home page (files in assets/img/, 1100x200 px).
-- pisum_CenH3_cell-cycle.jpg
-- listy_petricky_02.jpg
-- unijuga_lusk.jpg
-- crossing_fulvum_sativum-1100x200.jpg
-- lathyrus_latifolius_01-1100x200.jpg
+# Page banners (files in assets/img/). A page shows a banner when its
+# front matter contains e.g. "banner: home". Several images rotate;
+# all images of one banner should have the same size (width x height px).
+home:
+  width: 1100
+  height: 200
+  images:
+    - pisum_CenH3_cell-cycle.jpg
+    - listy_petricky_02.jpg
+    - unijuga_lusk.jpg
+    - crossing_fulvum_sativum-1100x200.jpg
+    - lathyrus_latifolius_01-1100x200.jpg
+
+people:
+  width: 1100
+  height: 250
+  images:
+    - IMG_2462_uprav_web_lab_Sep_2018.jpg
+
+publications:
+  width: 1200
+  height: 200
+  images:
+    - wordcloud_2.png
