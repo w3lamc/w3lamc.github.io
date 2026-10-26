@@ -1,0 +1,38 @@
+title: Laboratory of Molecular Cytogenetics
+description: >-
+  The laboratory examines sequence composition, molecular organization and
+  evolution of plant genomes and chromosomes.
+
+# Leave baseurl empty when the site is served from w3lamc.umbr.cas.cz.
+# For a preview at https://<user>.github.io/<repo>/ set it to "/<repo>".
+baseurl: ""
+url: "https://w3lamc.umbr.cas.cz"
+
+# Publications with year <= this value are grouped into one
+# "selected publications" section at the end of the Publications page.
+pubs_selected_before: 1997
+
+contact:
+  lab: Laboratory of Molecular Cytogenetics
+  institute: Institute of Plant Molecular Biology
+  institute_url: https://www.umbr.cas.cz
+  centre: Biology Centre CAS
+  centre_url: https://www.bc.cas.cz
+  address:
+    - Branisovska 31
+    - Ceske Budejovice
+    - CZ-37005, Czech Republic
+  person: Jiri Macas
+  email: macas@umbr.cas.cz
+  phone: +420 38 7775516
+  twitter: MacasLab
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

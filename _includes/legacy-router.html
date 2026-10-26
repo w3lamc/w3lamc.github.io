@@ -1,0 +1,21 @@
+<script>
+  // Old WordPress URLs (e.g. /lamc/?page_id=8, cited in publications) are
+  // served by the /lamc/ page on GitHub Pages; send them to the new pages.
+  (function () {
+    var base = {{ site.baseurl | jsonify }};
+    var pages = {
+      "4": "/lamc/",
+      "10": "/lamc/people/",
+      "6": "/lamc/publications/",
+      "8": "/lamc/resources/",
+      "557": "/lamc/resources/genome-browser/",
+      "301": "/lamc/resources/repeatexplorer/",
+      "312": "/lamc/resources/tarean/",
+      "317": "/lamc/resources/data/"
+    };
+    var id = new URLSearchParams(window.location.search).get("page_id");
+    if (id && pages[id] && pages[id] !== "/lamc/") {
+      window.location.replace(base + pages[id] + window.location.hash);
+    }
+  })();
+</script>

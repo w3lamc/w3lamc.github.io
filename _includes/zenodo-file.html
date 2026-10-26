@@ -1,0 +1,4 @@
+{% comment %}
+  Link to a file in a Zenodo record defined in _data/zenodo.yml.
+  Usage: {% include zenodo-file.html set="silene" file="SLSF.zip" label="female" %}
+{% endcomment %}{% assign z = site.data.zenodo[include.set] %}{% if z.record != "" %}<a href="https://zenodo.org/records/{{ z.record }}/files/{{ include.file }}?download=1">{{ include.label }}</a>{% else %}<span class="pending" title="Being moved to Zenodo">{{ include.label }}</span>{% endif %}

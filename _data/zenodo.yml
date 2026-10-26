@@ -1,0 +1,34 @@
+# Large datasets are archived on Zenodo instead of in this repository.
+# After a Zenodo record is published, fill in its numeric record id
+# (from https://zenodo.org/records/<id>) and, optionally, its DOI.
+# File names must match the names of the files uploaded to the record.
+# Old URLs of these files (e.g. /lamc/resources/SLSF.zip) are redirected
+# to Zenodo automatically by 404.html.
+
+pisum:
+  record: ""        # e.g. "1234567"
+  doi: ""           # e.g. "10.5281/zenodo.1234567"
+  files:
+    - name: PSC_454Reads.fna
+      old_path: /pisum_454/PSC_454Reads.fna
+    - name: PSC_454Reads.qual
+      old_path: /pisum_454/PSC_454Reads.qual
+
+silene:
+  record: ""
+  doi: ""
+  files:
+    - name: SLm_454.fna.zip
+      old_path: /lamc/resources/SLm_454.fna.zip
+    - name: SLf_454.fna.zip
+      old_path: /lamc/resources/SLf_454.fna.zip
+    - name: SLSM.zip
+      old_path: /lamc/resources/SLSM.zip
+    - name: SLSF.zip
+      old_path: /lamc/resources/SLSF.zip
+    - name: silene_454mf_contigs_o50-p84.zip
+      old_path: /lamc/resources/silene_454mf_contigs_o50-p84.zip
+    - name: silene_454_clustering.tar.gz
+      old_path: /lamc/resources/silene_454_clustering.tar.gz
+    - name: silene_repeat-spec_454_blast-dbs.tar.gz
+      old_path: /lamc/resources/silene_repeat-spec_454_blast-dbs.tar.gz

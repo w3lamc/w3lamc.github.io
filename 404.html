@@ -1,0 +1,50 @@
+---
+layout: default
+title: Page not found
+permalink: /404.html
+legacy_router: true
+---
+<script>
+  // Handle old URLs of the WordPress/PHP server that have no static page.
+  (function () {
+    var base = {{ site.baseurl | jsonify }};
+    var path = window.location.pathname;
+    if (base && path.indexOf(base) === 0) path = path.slice(base.length);
+
+    // Large data files moved to Zenodo (see _data/zenodo.yml)
+    var zenodo = {
+      {% for set in site.data.zenodo %}{% assign z = set[1] %}{% if z.record != "" %}{% for f in z.files %}
+      {{ f.old_path | jsonify }}: {{ "https://zenodo.org/records/" | append: z.record | append: "/files/" | append: f.name | append: "?download=1" | jsonify }},{% endfor %}{% endif %}{% endfor %}
+    };
+    if (zenodo[path]) { window.location.replace(zenodo[path]); return; }
+
+    // Any old PlantSat page -> PlantSat notice
+    if (/^\/plantsat(\/|$)/i.test(path)) { window.location.replace(base + "/PlantSat/"); return; }
+
+    // Old WordPress entry points (index.php?page_id=..., ?p=..., wp-content, ...)
+    if (/^\/lamc\/index\.php$/.test(path)) { window.location.replace(base + "/lamc/" + window.location.search); return; }
+
+    // Discontinued dynamic services
+    if (/^\/(pisum_454|profrep|repeatexplorer|lamc\/resources\/(SL|silene))/i.test(path)) {
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector(".page-title").textContent = "Temporarily unavailable";
+        document.title = "Temporarily unavailable | " + {{ site.title | jsonify }};
+        document.getElementById("not-found").hidden = true;
+        document.getElementById("unavailable").hidden = false;
+      });
+    }
+  })();
+</script>
+
+<div id="not-found">
+  <p>Sorry, the page you are looking for does not exist.</p>
+  <p>Go to the <a href="{{ '/lamc/' | relative_url }}">home page</a> or browse the
+  <a href="{{ '/lamc/publications/' | relative_url }}">publications</a> and
+  <a href="{{ '/lamc/resources/' | relative_url }}">resources</a>.</p>
+</div>
+
+<div id="unavailable" class="notice" hidden>
+  <p><strong>This service or dataset is temporarily unavailable.</strong></p>
+  <p>See the <a href="{{ '/lamc/resources/data/' | relative_url }}">Data</a> page for currently available
+  downloads, or contact <a href="mailto:{{ site.contact.email }}">{{ site.contact.person }}</a>.</p>
+</div>

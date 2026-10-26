@@ -1,0 +1,36 @@
+---
+layout: default
+title: Publications
+permalink: /lamc/publications/
+---
+{% comment %}
+  The list is generated from _data/publications.yml - edit that file,
+  not this one, to add or change publications.
+{% endcomment %}
+{% assign cutoff = site.pubs_selected_before %}
+{% assign groups = site.data.publications | group_by_exp: "p", "p.year" | sort: "name" | reverse %}
+{% assign recent = "" | split: "" %}
+{% assign selected = "" | split: "" %}
+{% for g in groups %}
+  {% assign y = g.name | plus: 0 %}
+  {% if y > cutoff %}{% assign recent = recent | push: g %}{% else %}{% assign selected = selected | concat: g.items %}{% endif %}
+{% endfor %}
+
+<ul class="year-index">
+  {% for g in recent %}<li><a href="#y{{ g.name }}">{{ g.name }}</a></li>{% endfor %}
+  {% if selected.size > 0 %}<li><a href="#y-selected">&le; {{ cutoff }}</a></li>{% endif %}
+</ul>
+
+{% for g in recent %}
+<h2 class="pub-year" id="y{{ g.name }}">{{ g.name }}</h2>
+<ul class="pub-list">
+  {% for p in g.items %}{% include publication.html pub=p %}{% endfor %}
+</ul>
+{% endfor %}
+
+{% if selected.size > 0 %}
+<h2 class="pub-year" id="y-selected">{{ cutoff }} and earlier (selected publications)</h2>
+<ul class="pub-list">
+  {% for p in selected %}{% include publication.html pub=p %}{% endfor %}
+</ul>
+{% endif %}

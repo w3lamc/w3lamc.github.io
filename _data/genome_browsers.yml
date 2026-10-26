@@ -1,0 +1,20 @@
+# Rows of the Interactive Genome Browser table (shown on the Resources and
+# Interactive Genome Browser pages). "publication_url" is optional.
+- species: "*Pisum sativum* cv. *Cameor*"
+  browser_url: "https://elmo5-26.hw.elixir-czech.cz/jbrowse2/?config=data%2Fpublic_datasets%2FPSAT_CEN6%2Fconfig.json"
+  publication: "Assembly of the 81.6 Mb centromere of pea chromosome 6 elucidates the structure and evolution of metapolycentric chromosomes"
+  publication_url: "https://www.biorxiv.org/content/10.1101/2022.10.25.513671v1"
+
+- species: "*Vicia faba* cv. *Hedin*"
+  browser_url: "https://elmo5-26.hw.elixir-czech.cz/jbrowse2/?config=data%2Fpublic_datasets%2FVfaba_Hedin%2Fconfig.json"
+  publication: "The giant diploid faba genome unlocks variation in a global protein crop"
+  publication_url: "https://biorxiv.org/cgi/content/short/2022.09.23.509015v1"
+
+- species: "*Vicia faba* cv. *Tiffany*"
+  browser_url: "https://elmo5-26.hw.elixir-czech.cz/jbrowse2/?config=data%2Fpublic_datasets%2FVfaba_Tiffany%2Fconfig.json"
+  publication: "The giant diploid faba genome unlocks variation in a global protein crop"
+  publication_url: "https://biorxiv.org/cgi/content/short/2022.09.23.509015v1"
+
+- species: "*Pisum sativum* cv. *Cameor* v2"
+  browser_url: "https://elmo5-26.hw.elixir-czech.cz/jbrowse2/?config=data%2Fcameor_v2%2Fconfig.json"
+  publication: "A new genome assembly of the pea cultivar Cameor provides resources for functional genomics and genetics"

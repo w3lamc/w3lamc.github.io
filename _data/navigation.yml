@@ -1,0 +1,18 @@
+# Main menu. "children" are shown as a sub-menu on the Resources pages.
+- title: Home
+  url: /lamc/
+- title: People
+  url: /lamc/people/
+- title: Publications
+  url: /lamc/publications/
+- title: Resources
+  url: /lamc/resources/
+  children:
+    - title: Interactive Genome Browser
+      url: /lamc/resources/genome-browser/
+    - title: RepeatExplorer
+      url: /lamc/resources/repeatexplorer/
+    - title: TAREAN
+      url: /lamc/resources/tarean/
+    - title: Data
+      url: /lamc/resources/data/

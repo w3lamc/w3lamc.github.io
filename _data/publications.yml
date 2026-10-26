@@ -1,0 +1,889 @@
+# Publications list for the Publications page (/lamc/publications/).
+#
+# HOW TO ADD A PUBLICATION
+#   Copy an existing entry, paste it at the top of the list (newest first)
+#   and edit the fields. Keep the two-space indentation and the quotes.
+#
+#   - year: 2026                      # required, decides the year heading
+#     authors: "Novak, P., Macas, J."   # required
+#     title: "Title of the paper"       # required, no trailing period
+#     venue: "*Journal* **12**: 1-10."  # optional, journal / volume / pages
+#     url: "https://doi.org/10.xxxx"    # optional, link on the title
+#     pdf: "Novak_Journal_2026.pdf"     # optional, file placed in lamc/publ/
+#
+#   Text may use Markdown: *italic*, **bold**, [link text](https://...).
+#   If both url and pdf are given, the title links to url and a [PDF] link
+#   is added. Entries with year <= 1997 are shown in a single
+#   "selected publications" section (see pubs_selected_before in _config.yml).
+
+- year: 2026
+  authors: "Kreplak,J., Novak, P., Avila Robledillo, L., Aubert,G., Imbert, B., Kaur, P., Gouil, Q., Lopez-Roques, C., Rodde, N., Bouchez, O., Tayeh, N., Macas,J., Burstin,J."
+  title: "A new genome assembly of the pea cultivar Cameor provides resources for functional genomics and genetics"
+  venue: "*Sci. Data*, DOI:10.1038/s41597-026-07347-4"
+  url: "https://doi.org/10.1038/s41597-026-07347-4"
+
+- year: 2026
+  authors: "Zhang, H., Windhorst, A., Bornhofen, E., Tulpova, Z., Novak, P., Macas, J., Simkova, H., Nadzieja, M., Kim, J.M., Cram, D., Cao, Y., Konkin, D., Sass, O., Welna, G., Himmelbach, A., Mascher, M., Link, W., Kwon, S.J., Yang, T.J., Andersen, S., Jayakodi, M."
+  title: "Allelic variation at a single locus distinguishes spring and winter faba beans"
+  venue: "*Nature Genetics* **58**:655-663."
+  url: "https://doi.org/10.1038/s41588-026-02524-y"
+
+- year: 2026
+  authors: "Włodzimierz, P., Perez-Roman, E., Gonzalez Isa, J., Hong, M., Zhang, M., Oliveira, L., Jenike, K., Burns, R., Sierra, P., Heuberger, M., Zhou, C., Koppera, S., Becker, M., Gorringe, N., Novak, P., Mata-Sucre, Y., Formenti, G.M., Teixeira, F.K., Drinnenberg, I.A., Kontoyiannis, I., Jaron, K.S., da Silva, M.U., Marques, A., Macas, J., Blaxter, M., Durbin, R., Bousios, A., Henderson, I.R."
+  title: "An atlas of eukaryotic centromere architecture reveals recurrent evolutionary dynamics"
+  venue: "*bioRxiv DOI:10.64898/2026.09.17.752431*"
+  url: "https://doi.org/10.64898/2026.09.17.752431"
+
+- year: 2025
+  authors: "Kuo, Y.-T., Neumann, P., Chen, J., Fuchs, J., Schubert, V., Kumke, K., Sader, M.A., Melzer, M., Zhu, Z., Himmelbach, A., Hentrich, H., Macas, J., Houben, A."
+  title: "Kinetochore mutations and histone phosphorylation pattern changes preceded holo- and macro-monocentromere evolution"
+  venue: "*Nature Communications* **16**:11332"
+  url: "https://doi.org/10.1038/s41467-025-67524-8"
+
+- year: 2025
+  authors: "Włodzimierz, P., Perez-Roman, E., Hong, M., Zhang, M., Oliveira, L., Gonzalez-Isa, J., Jenike, K., Burns, R., Zhou, C., Koppera, S., Becker, M., Gorringe, N., Novak, P., Mata-Sucre, Y., Kontoyiannis, I., Darwin Tree of Life Consortium, Blaxter, M., Marques, A., Macas, J., Durbin, R., Bousios, A., Henderson, I.R."
+  title: "Cyclical evolution of centromere architecture across 193 eukaryote species"
+  venue: "*Research Square DOI:10.21203/rs.3.rs-7008504/v1*"
+  url: "https://doi.org/10.21203/rs.3.rs-7008504/v1"
+
+- year: 2025
+  authors: "Rayner, T., Saalbach, G., Vickers, M., Paajanen, P., Martins, C., Wouters, R.H.M., Chinoy, C., Mulholland, F., Bal, M., Isaac, P., Novak, P., Macas, J., Ellis, N., Steuernagel, B., Domoney, C."
+  title: "Rebalancing the seed proteome following deletion of vicilin-related genes in pea (*Pisum sativum* L.)"
+  venue: "*J. Exp. Bot.* **76**:5830-5860."
+  url: "https://doi.org/10.1093/jxb/erae518"
+
+- year: 2025
+  authors: "Franco, A.L., Gu, W., Novak, P., Leitch, I.J., Viccini, L.F., Leitch, A.R."
+  title: "Contrasting distributions and expression characteristics of transcribing repeats in *Setaria viridis*"
+  venue: "*Plant Genome* **18**:e20551."
+  url: "https://doi.org/10.1002/tpg2.20551"
+
+- year: 2025
+  authors: "Navratilova, P., Pavlu, S., Zhu, Z., Tulpova, Z., Kopecky, O., Novak, P., Stein, N., Simkova, H."
+  title: "Epigenome and interactome profiling uncovers principles of distal regulation in the barley genome"
+  venue: "*Cell Genomics* 101037."
+  url: "https://doi.org/10.1016/j.xgen.2025.101037"
+
+- year: 2024
+  authors: "Oliveira, L., Neumann, P., Mata-Sucre, Y., Kuo, Y.-T., Marques, A., Schubert, V., Macas, J."
+  title: "KNL1 and NDC80 represent new universal markers for the detection of centromeres in plants"
+  venue: "*Chrom. Res.* **32**:3."
+  url: "https://rdcu.be/dzBlk"
+
+- year: 2024
+  authors: "Novak, P., Hostakova, N., Neumann, P., Macas, J."
+  title: "DANTE and DANTE_LTR: lineage-centric annotation pipelines for long terminal repeat retrotransposons in plant genomes"
+  venue: "*NAR Genomics and Bioinformatics* **6**:113."
+  url: "https://doi.org/10.1093/nargab/lqae113"
+
+- year: 2024
+  authors: "Mata-Sucre, Y., Kratka, M., Oliveira, L., Neumann, P., Macas, J., Schubert, V., Huettel, B., Kejnovsky, E., Houben, A., Pedrosa-Harand, A., Souza, G., Marques, A."
+  title: "Repeat-based holocentromeres of the woodrush *Luzula sylvatica* reveal insights into the evolutionary transition to holocentricity"
+  venue: "*Nature Communications* **15**:9565."
+  url: "https://doi.org/10.1038/s41467-024-53944-5"
+
+- year: 2024
+  authors: "Chen, J., Bartos, J., Boudichevskaia, A., Voigt, A., Rabanus-Wallace, M.T., Dreissig, S., Tulpova, Z., Simkova, H., Macas, J., Kim, G., Buhl, J., Bürstenbinder, K., Blattner, F.R., Fuchs, J., Schmutzer, T., Himmelbach, A., Schubert, V., Houben, A."
+  title: "The genetic mechanism of B chromosome drive in rye illuminated by chromosome-scale assembly"
+  venue: "*Nature Communications* **15**:9686."
+  url: "https://doi.org/10.1038/s41467-024-53799-w"
+
+- year: 2024
+  authors: "Xin, H., Wang, Y., Zhang, W., Yu, B., Neumann, P., Ning, Y., Zhang, T., Wu, Y., Jiang, N., Jiang, J., Xi, M."
+  title: "*Celine*, a long interspersed nuclear element retrotransposon, colonizes in the centromeres of poplar chromosomes"
+  venue: "*Plant Physiol.* **195**:2787–2798."
+  url: "https://doi.org/10.1093/plphys/kiae214"
+
+- year: 2024
+  authors: "Vigouroux, M., Novak, P., Oliveira, L.C., Santos, C., Cheema, J., Wouters, R.H.M., Paajanen, P., Vickers, M., Koblizkova, A., Vaz Patto, M.C., Macas, J., Steuernagel, B., Martin, C., Emmrich, P.M.F."
+  title: "A chromosome-scale reference genome of grasspea (*Lathyrus sativus*)"
+  venue: "*Sci. Data* **11**:1035."
+  url: "https://doi.org/10.1038/s41597-024-03868-y"
+
+- year: 2023
+  authors: "Neumann, P., Oliveira, L., Jang, T.-S., Novak, P., Koblizkova, A., Schubert, V., Houben, A., Macas, J."
+  title: "Disruption of the standard kinetochore in holocentric *Cuscuta* species"
+  venue: "*Proc. Natl. Acad. Sci. USA* **120**:e2300877120."
+  url: "https://doi.org/10.1073/pnas.2300877120"
+
+- year: 2023
+  authors: "Macas, J., Ávila Robledillo, L., Kreplak, J., Novak, P., Koblizkova, A., Vrbova, I., Burstin, J., Neumann, P."
+  title: "Assembly of the 81.6 Mb centromere of pea chromosome 6 elucidates the structure and evolution of metapolycentric chromosomes"
+  venue: "*PLoS Genetics* **19**:e1010633."
+  url: "https://doi.org/10.1371/journal.pgen.1010633"
+
+- year: 2023
+  authors: "Kuo, Y.-T., Souza Camara, A., Schubert, V., Neumann, P., Macas, J., Melzer, M., Chen, J., Fuchs, J., Abel, S., Klocke, E., Huettel, B., Himmelbach, A., Demidov, D., Dunemann, F., Mascher, M., Ishii, T., Marques, A., Houben, A."
+  title: "Holocentromeres can consist of merely a few megabase-sized satellite arrays"
+  venue: "*Nature Communications* **14**:3502."
+  url: "https://doi.org/10.1038/s41467-023-38922-7"
+
+- year: 2023
+  authors: "Edwards, A., Njaci, I., Sarkar, A., Jiang, Z., Kaithakottil, G.G., Moore, C., Cheema, J., Stevenson, C.E.M., Rejzek, M., Novak, P., Vigouroux, M., Vickers, M., Wouters, R.H.M., Paajanen, P., Steuernagel, B., Moore, J.D., Higgins, J., Swarbreck, D., Martens, S., Kim, C.Y., Weng, J.-K., Mundree, S., Kilian, B., Kumar, S., Loose, M., Yant, L., Macas, J., Wang, T.L., Martin, C., Emmrich, P.M.F."
+  title: "Genomics and biochemical analyses reveal a metabolon key to β-L-ODAP biosynthesis in *Lathyrus sativus*"
+  venue: "*Nature Communications* **14**:876."
+  url: "https://doi.org/10.1038/s41467-023-36503-2"
+
+- year: 2023
+  authors: "Jayakodi, M., Golicz, A.A., Kreplak, J., Fechete, L.I., Angra, D., Bednář, P., Bornhofen, E., Zhang, H., Boussageon, R., Kaur, S., Cheung, K., Čížková, J., Gundlach, H., Hallab, A., Imbert, B., Keeble-Gagnère, G., Koblížková, A., Kobrlová, L., Krejčí, P., Mouritzen, T.W., Neumann, P., Nadzieja, M., Kærgaard Nielsen, L., Novák, P., Orabi, J., Padmarasu, S., Robertson-Shersby-Harvie, T., Ávila Robledillo, L., Schiemann, A., Tanskanen, J., Törönen, P., Warsame, A.O., Wittenberg, A.H.J., Himmelbach, A., Aubert, G., Courty, P.-E., Doležel, J., Holm, L.U., Janss, L.L., Khazaei, H., Macas, J., Mascher, M., Smýkal, P., Snowdon, R.J., Stein, N., Stoddard, F.L., Tayeh, N., Torres, A.M., Usadel, B., Schubert, I., O’Sullivan, D.M., Schulman, A.H., Andersen, S.U."
+  title: "The giant diploid faba genome unlocks variation in a global protein crop"
+  venue: "*Nature* **615**:652–659."
+  url: "https://doi.org/10.1038/s41586-023-05791-5"
+
+- year: 2022
+  authors: "Hofstatter, P.G., Thangavel, G., Lux, T., Neumann, P., Vondrak, T., Novak, P., Zhang, M., Costa, L., Castellani, M., Scott, A., Toegelova, H., Fuchs, J., Mata-Sucre, Y., Dias, Y., Vanzela, A.L.L., Huettel, B., Almeida, C.C.S., Simkova, H., Souza, G., Pedrosa-Harand, A., Macas, J., Mayer, K.F.X., Houben, A., Marques, A."
+  title: "Repeat-based holocentromeres influence genome architecture and karyotype evolution"
+  venue: "*Cell* **185**:3153-3168.e18"
+  url: "https://doi.org/10.1016/j.cell.2022.06.045"
+
+- year: 2022
+  authors: "Schley, R.J., Pellicer, J., Ge, X.-J., Barrett, C., Bellot, S., Guignard, M.S., Novak, P., Suda, J., Fraser, D., Baker, W.J., Dodsworth, S., Macas, J., Leitch, A.R., Leitch, I.J."
+  title: "The Ecology of Palm Genomes: Repeat-associated genome size expansion is constrained by aridity"
+  venue: "*New Phytol.* **236**:433-446."
+  url: "https://doi.org/10.1111/nph.18323"
+
+- year: 2022
+  authors: "Tulpova, Z., Kovarik, A., Toegelova, H., Navratilova, P., Kapustova, V., Hribova, E., Vrana, J., Macas, J., Dolezel, J., Simkova, H."
+  title: "Fine structure and transcription dynamics of bread wheat ribosomal DNA loci deciphered by a multi-omics approach"
+  venue: "*Plant* *Genome* **15**:e20191."
+  url: "https://doi.org/10.1002/tpg2.20191"
+
+- year: 2022
+  authors: "Ellis, N., Vaz Patto, M.C., Rubiales, D., Macas, J., Novak, P., Kumar, S., Hao, X., Edwards, A., Sarkar, A., Emmrich, P."
+  title: "Grasspea"
+  venue: "*In*: Chapman, M.A. (ed.), Underutilised Crop Genomes. Compendium of Plant Genomes. Springer, Cham, pp. 217-228."
+
+- year: 2021
+  authors: "Vondrak, T., Oliveira, L., Novak, P., Koblizkova, A., Neumann, P., Macas, J."
+  title: "Complex sequence organization of heterochromatin in the holocentric plant *Cuscuta europaea* elucidated by the computational analysis of nanopore reads"
+  venue: "*Comput. Struct. Biotechnol. J.* **19**:2179-2189."
+  url: "https://www.sciencedirect.com/science/article/pii/S2001037021001227"
+
+- year: 2021
+  authors: "Neumann, P., Oliveira, L., Cizkova, J., Jang, T.-S., Klemme, S., Novak, P., Stelmach, K., Koblizkova, A., Dolezel, J., Macas, J."
+  title: "Impact of parasitic lifestyle and different types of centromere organization on chromosome and genome evolution in the plant genus *Cuscuta*"
+  venue: "*New Phytol.* **229**:2365-2377."
+  pdf: "Neumann_NewPhytol_2021.pdf"
+
+- year: 2021
+  authors: "Hoang, P.T.N., Rouillard, J.M., Macas, J., Kubalova, I., Schubert, V., Schubert, I."
+  title: "Limitation of current probe design for oligo-cross-FISH, exemplified by chromosome evolution studies in duckweeds"
+  venue: "*Chromosoma* **130**:15-25."
+  pdf: "Hoang_Chromosoma_2021.pdf"
+
+- year: 2020
+  authors: "Novak, P., Neumann, P., Macas, J."
+  title: "Global analysis of repetitive DNA from unassembled sequence reads using RepeatExplorer2"
+  venue: "*Nature Protocols* **15**:3745–3776."
+  url: "https://rdcu.be/b80Gr"
+
+- year: 2020
+  authors: "Novak, P., Guignard, M.S., Neumann, P., Kelly, L.J., Mlinarec, J., Koblizkova, A., Dodsworth, S., Kovarik, A., Pellicer, J., Wang, W., Macas, J., Leitch, I.J., Leitch, A.R."
+  title: "Repeat-sequence turnover shifts fundamentally in species with large genomes"
+  venue: "*Nature Plants* **6**:1325-1329."
+  url: "https://rdcu.be/b8IXO"
+
+- year: 2020
+  authors: "Avila Robledillo, L., Neumann, P., Koblizkova, A., Novak, P., Vrbova, I., Macas, J."
+  title: "Extraordinary sequence diversity and promiscuity of centromeric satellites in the legume tribe *Fabeae*"
+  venue: "*Mol. Biol. Evol.* **37**:2341-2356."
+  url: "http://dx.doi.org/10.1093/molbev/msaa090"
+
+- year: 2020
+  authors: "Oliveira, L., Neumann, P., Jang, T.-S., Klemme, S., Schubert, V., Koblizkova, A., Houben, A., Macas, J."
+  title: "Mitotic spindle attachment to the holocentric chromosomes of *Cuscuta europaea* does not correlate with the distribution of CENH3 chromatin"
+  venue: "*Front. Plant Sci.* **10**:1799."
+  url: "https://www.frontiersin.org/articles/10.3389/fpls.2019.01799/full"
+
+- year: 2020
+  authors: "Vondrak, T., Avila Robledillo, L., Novak, P., Koblizkova, A., Neumann, P., Macas, J."
+  title: "Characterization of repeat arrays in ultra-long nanopore reads reveals frequent origin of satellite DNA from retrotransposon-derived tandem repeats"
+  venue: "*Plant J*. **101**:484-500."
+  url: "https://onlinelibrary.wiley.com/doi/10.1111/tpj.14546"
+
+- year: 2020
+  authors: "McCann, J., Macas, J., Novak, P., Stuessy, T.F., Villasenor, J.L., Weiss-Schneeweiss, H."
+  title: "Differential genome size and repetitive DNA evolution in diploid species of *Melampodium* sect. *Melampodium* (Asteraceae)"
+  venue: "*Front. Plant Sci.* **11**:362."
+  url: "https://www.frontiersin.org/articles/10.3389/fpls.2020.00362/full"
+
+- year: 2020
+  authors: "Schubert, V., Neumann, P., Marques, A., Heckmann, S., Macas, J., Pedrosa-Harand, A., Schubert, I., Jang, T.-S., Houben, A."
+  title: "Super-resolution microscopy reveals diversity of plant centromere architecture"
+  venue: "*Int. J. Mol. Sci.* **21**:3488."
+  url: "https://www.mdpi.com/1422-0067/21/10/3488"
+
+- year: 2020
+  authors: "Aïnouche, A., Paris, A., Giraud, D., Keller, J., Raimondeau, P., Mahé, F., Neumann, P., Novak, P., Macas, J., Aïnouche, M., Salmon, A., Martin, G.E."
+  title: "The Repetitive Content in Lupin Genomes"
+  venue: "*In*: Singh K., Kamphuis L., Nelson M. (eds) The Lupin Genome. Compendium of Plant Genomes. Springer, Cham, pp. 161-168."
+
+- year: 2020
+  authors: "Hoang, P.T.N., Fiebig, A., Novak, P., Macas, J., Cao, H.X., Stepanenko, A., Chen, G., Borisjuk, N., Scholz, U., Schubert, I."
+  title: "Chromosome-scale genome assembly for the duckweed *Spirodela intermedia*, integrating cytogenetic maps, PacBio and Oxford Nanopore libraries"
+  venue: "*Sci Rep* **10**: 19230."
+  url: "https://www.nature.com/articles/s41598-020-75728-9"
+
+- year: 2020
+  authors: "Burstin, J., Kreplak, J., Macas, J., Lichtenzveig, J."
+  title: "*Pisum sativum* (Pea)"
+  venue: "Genome of the Month. *Trends Genet*. **36**:312-313."
+  pdf: "Burstin_TIG_2020.pdf"
+
+- year: 2019
+  authors: "Neumann, P., Novak, P., Hostakova, N., Macas, J."
+  title: "Systematic survey of plant LTR-retrotransposons elucidates phylogenetic relationships of their polyprotein domains and provides a reference for element classification"
+  venue: "*Mobile DNA* **10**:1."
+  url: "https://mobilednajournal.biomedcentral.com/articles/10.1186/s13100-018-0144-1"
+
+- year: 2019
+  authors: "Wu, D., Ruban, A., Fuchs, J., Macas, J., Novak, P., Vaio, M., Zhou, Y., Houben, A."
+  title: "Nondisjunction and unequal spindle organization accompany the drive of *Aegilops speltoides* B chromosomes"
+  venue: "*New Phytol.* **223**:1340-1352."
+  pdf: "Wu_NewPhytologist_2019.pdf"
+
+- year: 2019
+  authors: "Tulpova, Z., Toegelova, H., Lapitan, N.L.V., Peairs, F.B., Macas, J., Novak, P., Lukaszewski, A.J., Kopecky, D., Mazacova, M., Vrana, J., Holusova, K., Leroy, P., Dolezel, J., Simkova, H."
+  title: "Accessing a Russian wheat aphid resistance gene in bread wheat by long-read technologies"
+  venue: "*Plant Genome* **12:**180065."
+  url: "https://doi.org/10.3835/plantgenome2018.09.0065"
+
+- year: 2019
+  authors: "Kapustova, V., Tulpova, Z., Toegelova, H., Novak, P., Macas, J., Karafiatova, M., Hribova, E., Dolezel, J., Simkova, H."
+  title: "The dark matter of large cereal genomes: long tandem repeats"
+  venue: "*Int. J. Mol. Sci.* **20**: 2483."
+  url: "https://doi.org/10.3390/ijms20102483"
+
+- year: 2019
+  authors: "Finke, A., Mandáková, T., Nawaz, K., Vu, G.T.H., Novak, P., Macas, J., Lysak, M.A., Pecinka, A."
+  title: "Genome invasion by hypomethylated satellite repeat in Australian crucifer *Ballantinia antipoda*"
+  venue: "*Plant J*. **99**:1066-1079."
+  pdf: "Finke_PlantJournal_2019.pdf"
+
+- year: 2019
+  authors: "Kreplak,J., Madoui,M.A., Cápal,P., Novák,P., Labadie,K., Aubert,G., Bayer,P.E., Gali,K.K., Syme,R.A., Main,D., Klein,A., Bérard,A., Vrbová,I., Fournier,C., d’Agata,L., Belser,C., Berrabah,W., Toegelová,H., Milec,Z., Vrána,J., Lee,H., Kougbeadjo,A., Térézol,M., Huneau,C., Turo,C.J., Mohellibi,N., Neumann,P., Falque,M., Gallardo,K., McGee,R., Tar’an,B., Bendahmane,A., Aury,J.M., Batley,J., Le Paslier,M.C., Ellis,N., Warkentin,T.D., Coyne,C.J., Salse,J., Edwards,D., Lichtenzveig,J., Macas,J., Doležel,J., Wincker,P., Burstin,J."
+  title: "A reference genome for pea provides insight into legume genome evolution"
+  venue: "*Nature Genetics* **51**:1411-1422."
+  url: "https://www.nature.com/articles/s41588-019-0480-1"
+
+- year: 2018
+  authors: "Avila Robledillo, L., Koblizkova, A., Novak, P., Böttinger, K., Vrbova, I., Neumann, P., Schubert, I., Macas, J."
+  title: "Satellite DNA in *Vicia faba* is characterized by remarkable diversity in its sequence composition, association with centromeres, and replication timing"
+  venue: "*Sci. Rep.* **8**: 5838."
+  url: "https://www.nature.com/articles/s41598-018-24196-3"
+
+- year: 2018
+  authors: "McCann, J., Jang, T.-S., Macas, J., Schneeweiss, G.M., Matzke, N.J., Novak, P., Stuessy, T.F., Villasenor, J.L., Weiss-Schneeweiss, H."
+  title: "Dating the species network: allopolyploidy and repetitive DNA evolution in american daisies (*Melampodium* sect. *Melampodium*, Asteraceae)"
+  venue: "*Syst. Biol.* **67**: 1010-1024."
+  url: "https://academic.oup.com/sysbio/advance-article/doi/10.1093/sysbio/syy024/4944071"
+
+- year: 2018
+  authors: "Marques, A., Klemme, S., Houben, A."
+  title: "Evolution of plant B chromosome enriched sequences"
+  venue: "*Genes* **9**: 515."
+  url: "https://www.mdpi.com/2073-4425/9/10/515"
+
+- year: 2017
+  authors: "Novak, P., Avila Robledillo, L., Koblizkova, A., Vrbova, I., Neumann, P., Macas, J."
+  title: "TAREAN: a computational tool for identification and characterization of satellite DNA from unassembled short reads"
+  venue: "*Nucleic Acids Res.* **45**(12): e111."
+  url: "https://academic.oup.com/nar/article/45/12/e111/3574061/TAREAN-a-computational-tool-for-identification-and?guestAccessKey=3acb243e-4f5d-4a10-b3d6-3e19fa3ae54c"
+
+- year: 2017
+  authors: "Ribeiro, T., Marques, A., Novak, P., Schubert, V., Vanzela, A.L.L., Macas, J., Houben, A., Pedrosa-Harand, A."
+  title: "Centromeric and non-centromeric satellite DNA organisation differs in holocentric *Rhynchospora* species"
+  venue: "*Chromosoma* **126**: 325-335."
+  pdf: "Ribeiro_Chromosoma_2017.pdf"
+
+- year: 2017
+  authors: "Wang, G., He, Q., Macas, J., Novak, P., Neumann, P., Meng, D., Zhao, H., Guo, N., Han, S., Zong, M., Jin, W., Liu, F."
+  title: "Karyotypes and distribution of tandem repeat sequences in *Brassica nigra* determined by fluorescence in situ hybridization"
+  venue: "*Cytogenet. Genome Res.* **152**: 158-165."
+  pdf: "Wang_CGR_2017.pdf"
+
+- year: 2016
+  authors: "Neumann, P., Schubert, V., Fukova, I., Manning, J.E., Houben, A., Macas, J."
+  title: "Epigenetic histone marks of extended meta-polycentric centromeres of *Lathyrus* and *Pisum* chromosomes"
+  venue: "*Front. Plant Sci.* **7**: 234."
+  url: "http://journal.frontiersin.org/article/10.3389/fpls.2016.00234"
+
+- year: 2016
+  authors: "Boutte, J., Aliaga, B., Lima, O., Ferreira de Carvalho, J., Ainouche, A., Macas, J., Rousseau-Gueutin, M., Coriton, O., Ainouche, M., Salmon, A."
+  title: "Haplotype detection from next generation sequencing in high ploidy-level species: 45S rDNA gene copies in the hexaploid *Spartina maritima*"
+  venue: "*G3: Genes, Genomes, Genetics* **6**: 29-40."
+  url: "http://g3journal.org/content/6/1/29.full"
+
+- year: 2016
+  authors: "Kumke, K., Macas, J., Fuchs, J., Altschmied, L., Kour, J., Dhar, M.K., Houben, A."
+  title: "*[Plantago lagopus ](publ/Kumke_CGR_2016.pdf)*[B chromosome is enriched in 5S rDNA-derived satellite DNA](publ/Kumke_CGR_2016.pdf)"
+  venue: "*Cytogenet. Genome Res.* **148**: 68-73."
+
+- year: 2016
+  authors: "Kowar, T., Zakrzewski, F., Macas, J., Koblizkova, A., Viehoever, P., Weisshaar, B., Schmidt, T."
+  title: "Repeat composition of CenH3-chromatin and H3K9me2-marked heterochromatin in sugar beet (*Beta vulgaris*)"
+  venue: "*BMC Plant Biol.* **16**: 120."
+  url: "http://bmcplantbiol.biomedcentral.com/articles/10.1186/s12870-016-0805-5"
+
+- year: 2015
+  authors: "Neumann, P., Pavlikova, Z., Koblizkova, A., Fukova, I., Jedlickova, V., Novak, P., Macas, J."
+  title: "Centromeres off the hook: massive changes in centromere size and structure following duplication of CenH3 gene in *Fabeae* species"
+  venue: "*Mol. Biol. Evol.* **32**: 1862-1879."
+  url: "http://mbe.oxfordjournals.org/content/32/7/1862.full"
+
+- year: 2015
+  authors: "Marques, A., Ribeiro, T., Neumann, P., Macas, J., Novak, P., Schubert, V., Pellino, M., Fuchs, J., Ma, W., Kuhlmann, M., Brandt, R., Vanzela, A.L.L., Beseda, T., Simkova, H., Pedrosa-Harand, A., Houben, A."
+  title: "Holocentromeres in *Rhynchospora* are associated with genome-wide centromere-specific repeat arrays interspersed amongst euchromatin"
+  venue: "*Proc. Natl. Acad. Sci. USA* **112**: 13633-13638."
+  pdf: "Marques_PNAS_2015.pdf"
+
+- year: 2015
+  authors: "Macas, J., Novak, P., Pellicer, J., Cizkova, J., Koblizkova, A., Neumann, P., Fukova, I., Dolezel, J., Kelly, L., Leitch, I."
+  title: "In depth characterization of repetitive DNA in 23 plant genomes reveals sources of genome size variation in the legume tribe *Fabeae*"
+  venue: "*PLoS ONE* **10**: e0143424."
+  url: "http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0143424"
+
+- year: 2015
+  authors: "Kelly, L., Renny-Byfield, S., Pellicer, J., Macas, J., Novak, P., Neumann, P., Lysak, M., Day, P., Berger, M., Fay, M., Nichols, R., Leitch, A., Leitch, I."
+  title: "Analysis of the giant genomes of *Fritillaria* (Liliaceae) indicates that a lack of DNA removal characterizes extreme expansions in genome size"
+  venue: "*New Phytol.* **208**: 596-607."
+  url: "http://onlinelibrary.wiley.com/doi/10.1111/nph.13471/full"
+
+- year: 2015
+  authors: "Vu, G.T.H., Schmutzer, T., Bull, F., Cao, H.X., Fuchs, J., Tran, T.D., Jovtchev, G., Pistrick, K., Stein, K., Pecinka, A., Neumann, P., Novak, P., Macas, J., Dear, P.H., Blattner, F.R., Scholz, U., Schubert, I."
+  title: "Comparative genome analysis reveals divergent genome size evolution in a carnivorous plant genus"
+  venue: "*Plant Genome* **8**(3)."
+  url: "https://doi.org/10.3835/plantgenome2015.04.0021"
+
+- year: 2015
+  authors: "Tran, T.D., Cao, H.X., Jovtchev, G., Novak, P., Vu, G.T.H., Macas, J., Schubert, I., Fuchs, J."
+  title: "Chromatin organization and cytological features of carnivorous *Genlisea* species with large genome size differences"
+  venue: "*Front. Plant Sci.* **6**: 613."
+  url: "http://journal.frontiersin.org/article/10.3389/fpls.2015.00613/abstract"
+
+- year: 2015
+  authors: "Tran, T.D., Cao, H.X., Jovtchev, G., Neumann, P., Novak, P., Fojtova, M., Vu, G.T.H., Macas, J., Fajkus, J., Schubert, I., Fuchs, J."
+  title: "Centromere and telomere sequence alterations reflect the rapid genome evolution within the carnivorous plant genus *Genlisea*"
+  venue: "*Plant J.* **84**: 1087-1099."
+  pdf: "Tran_Plant_J_2015.pdf"
+
+- year: 2015
+  authors: "Banaei-Moghaddam, A.M., Martis, M.M., Macas, J., Gundlach, H., Himmelbach, A., Altschmied, L., Mayer, K.F.X., Houben, A."
+  title: "Genes on B chromosomes: old questions revisited with new tools"
+  venue: "*BBA-Gene Regul. Mech.* **1849**: 64-70."
+  pdf: "Banaei-Moghaddam_BBA_2015.pdf"
+
+- year: 2015
+  authors: "Badaeva, E., Amosova, A., Goncharov, N., Macas, J., Ruban, A., Grechishnikova, I., Zoshchuk, S., Houben, A."
+  title: "A set of cytogenetic markers allows the precise identification of all A-genome chromosomes in diploid and polyploidy wheat"
+  venue: "*Cytogenet. Genome Res.* **146**: 71-79."
+  pdf: "Badaeva_CGR_2015.pdf"
+
+- year: 2015
+  authors: "Weiss-Schneeweiss, H., Leitch, A.R., McCann, J., Jang, T.-S., Macas, J."
+  title: "Employing next generation sequencing to explore the repeat landscape of the plant genome"
+  venue: "*In*: Hörandl, E. & Appelhans, M. (eds.): *Next Generation Sequencing in Plant Systematics.* Regnum Vegetabile 158, pp. 155-179. Koeltz Scientific Books, Königstein, Germany."
+  pdf: "Schneeweiss_book_2015.pdf"
+
+- year: 2015
+  authors: "Dodsworth, S., Chase, M.W., Kelly, L.J., Leitch, I.J., Macas, J., Novak, P., Piednoël, M., Weiss-Schneeweiss, H., Leitch, A."
+  title: "Genomic repeat abundances contain phylogenetic signal"
+  venue: "*Syst. Biol.* **64**: 112-126."
+  url: "http://sysbio.oxfordjournals.org/content/64/1/112.full"
+
+- year: 2014
+  authors: "Novak, P., Hribova, E., Neumann, P., Koblizkova, A., Dolezel, J., Macas, J."
+  title: "Genome-wide analysis of repeat diversity across the family Musaceae"
+  venue: "*PLoS ONE* **9**: e98918."
+  url: "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0098918"
+
+- year: 2014
+  authors: "Zhang, H., Koblizkova, A., Wang, K., Gong, Z., Oliveira, L., Torres, G.A., Wu, Y., Zhang, W., Novak, P., Buell, C.R., Macas, J., Jiang, J."
+  title: "Boom-bust turnovers of megabase-sized centromeric DNA in *Solanum* species: Rapid evolution of DNA sequences associated with centromeres"
+  venue: "*Plant Cell* **26**: 1436-1447."
+  pdf: "Zhang_PlantCell_2014.pdf"
+
+- year: 2014
+  authors: "Emadzade, K., Jang, T.-S., Macas, J., Kovarik, A., Novak, P., Parker, J., Weiss-Schneeweiss, H."
+  title: "Differential amplification of satellite *PaB6* in chromosomally hyper-variable *Prospero autumnale* complex (Hyacinthaceae)"
+  venue: "*Ann. Bot.* **114**: 1597-1608."
+  url: "http://aob.oxfordjournals.org/content/114/8/1597.full"
+
+- year: 2013
+  authors: "Novak, P., Neumann, P., Pech, J., Steinhaisl, J., Macas, J."
+  title: "RepeatExplorer: a Galaxy-based web server for genome-wide characterization of eukaryotic repetitive elements from next generation sequence reads"
+  venue: "*Bioinformatics* **29**: 792-793."
+  pdf: "Novak_Bioinformatics_2013.pdf"
+
+- year: 2013
+  authors: "Heckmann, S., Macas, J., Kumke, K., Fuchs, J., Schubert, V., Ma, L., Novak, P., Neumann, P., Taudien, S., Platzer, M., Houben, A."
+  title: "The holocentric species *Luzula elegans* shows interplay between centromere and large-scale genome organization"
+  venue: "*Plant J.* **73**: 555-565."
+  pdf: "Heckmann_Plant_J_2013.pdf"
+
+- year: 2013
+  authors: "Renny-Byfield, S., Kovarik, A., Kelly, L., Macas, J., Novak, P., Chase, M., Nichols, R.A., Pancholi, M., Grandbastien, M.A., Leitch, A."
+  title: "Diploidisation and genome size change in allopolyploids is associated with differential dynamics of low and high copy sequences"
+  venue: "*Plant J.* **74**: 829-839."
+  pdf: "Renny-Byfield_Plant_J_2013.pdf"
+
+- year: 2013
+  authors: "Steflova, P., Tokan, V., Vogel, I., Lexa, M., Macas, J., Novak, P., Hobza, R., Vyskot, B., Kejnovsky, E."
+  title: "Contrasting patterns of transposable element and satellite distribution on sex chromosomes (XY1Y2) in the dioecious plant *Rumex acetosa*"
+  venue: "*Genome Biol. Evol.* **5**: 769-782."
+  url: "http://gbe.oxfordjournals.org/content/5/4/769.full"
+
+- year: 2013
+  authors: "Klemme, S., Banaei-Moghaddam, A.M., Macas, J., Wicker, T., Novak, P., Houben, A."
+  title: "High-copy sequences reveal a distinct evolution of the rye B chromosome"
+  venue: "*New Phytol.* **199**: 550-558."
+  pdf: "Klemme_NewPhytol_2013.pdf"
+
+- year: 2013
+  authors: "Kopecky, D., Martis, M.M., Cihalikova, J., Hribova, E., Vrana, J., Bartos, J., Kopecka, J., Cattonaro, F., Stoces, S., Novak, P., Neumann, P., Macas, J., Simkova, H., Studer, B., Asp, T., Baird, J.H., Navratil, P., Karafiatova, M., Kubalakova, M., Safar, J., Mayer, K.F.X., Dolezel, J."
+  title: "Flow sorting and sequencing meadow fescue chromosome 4F"
+  venue: "*Plant Physiol.* **163**: 1323-1337."
+  pdf: "Kopecky_PlantPhysiology_2013.pdf"
+
+- year: 2012
+  authors: "Neumann, P., Navratilova, A., Schroeder-Reiter, E., Koblizkova, A., Steinbauerova, V., Chocholova, E., Novak, P., Wanner, G., Macas, J."
+  title: "Stretching the rules: monocentric chromosomes with multiple centromere domains"
+  venue: "*PLoS Genetics* **8**: e1002777."
+  url: "https://doi.org/10.1371/journal.pgen.1002777"
+
+- year: 2011
+  authors: "Steinbauerova, V., Neumann, P., Novak, P., Macas, J."
+  title: "A widespread occurrence of extra open reading frames in plant Ty3/gypsy retrotransposons"
+  venue: "*Genetica* **139**: 1543-1555."
+  pdf: "Stein_Genetica_2012.pdf"
+
+- year: 2012
+  authors: "Martis, M.M., Klemme, S., Moghaddam, A.M.B., Blattner, F.R., Macas, J., Schmutzer, T., Scholz, U., Gundlach, H., Wicker, T., Simkova, H., Novak, P., Neumann, P., Kubalakova, M., Bauer, E., Haseneyer, G., Fuchs, J., Dolezel, J., Stein, N., Mayer, K.F.X., Houben, A."
+  title: "Selfish supernumerary chromosome reveals its origin as a mosaic of host genome and organellar sequences"
+  venue: "*Proc. Natl. Acad. Sci. USA* **109**: 13343-13346."
+  pdf: "Martis_PNAS_2012.pdf"
+
+- year: 2012
+  authors: "Gong, Z., Wu, Y., Koblizkova, A., Torres, G.A., Wang, K., Iovene, M., Neumann, P., Zhang, W., Novak, P., Buell, R., Macas, J., Jiang, J."
+  title: "Repeatless and repeat-based centromeres in potato: implications for centromere evolution"
+  venue: "*Plant Cell* **24**: 3559-3574."
+  pdf: "Gong_Plant_Cell_2012.pdf"
+
+- year: 2012
+  authors: "Renny-Byfield, S., Kovarik, A., Chester, M., Nichols, R.A., Macas, J., Novak, P., Leitch, A.R."
+  title: "Independent, rapid and targeted loss of highly repetitive DNA in natural and synthetic allopolyploids of *Nicotiana tabacum*"
+  venue: "*PLoS ONE* **7**: e36963."
+  url: "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0036963"
+
+- year: 2012
+  authors: "Matyasek, R., Renny-Byfield, S., Fulnecek, J., Macas, J., Grandbastien, M.A., Nichols, R.A., Leitch, A.R., Kovarik. A."
+  title: "Next generation sequencing analysis reveals a relationship between rDNA unit diversity and locus number in Nicotiana diploids"
+  venue: "*BMC Genomics* **13**: 722."
+  url: "http://www.biomedcentral.com/1471-2164/13/722/"
+
+- year: 2012
+  authors: "Banaei-Moghaddam, A.M., Schubert, V., Kumke, K., WeiÃŸ, O., Klemme, S., Nagaki, K., Macas, J., GonzÃ¡lez-SÃ¡nchez, M., Heredia, V., GÃ³mez-Revilla, D., GonzÃ¡lez-GarcÃ­a, M., Vega, J.M., Puertas, M.J., Houben, A."
+  title: "Nondisjuction in favour of a chromosome – the mechanism of rye B chromosome drive during pollen mitosis"
+  venue: "*Plant Cell* **24**: 4124-4134."
+
+- year: 2012
+  authors: "Smykal, P., Aubert, G., Burstin, J., Coyne, C.J., Ellis, N.T.H., Flavell, A.J., Ford, R., Hybl, M., Macas, J., Neumann, P., McPhee, K.E., Redden, R., Rubiales, D., Weller, J.L., Warkentin, T.D."
+  title: "Pea (*Pisum sativum* L.) in the genomic era"
+  venue: "*Agronomy* **2**: 74-115."
+  url: "http://www.mdpi.com/2073-4395/2/2/74/"
+
+- year: 2012
+  authors: "Kelly, L.J., Leitch, A.R., Fay, M.F., Renny-Byfield, S., Pellicer, J., Macas, J., Leitch, I.J."
+  title: "Why size really matters when sequencing plant genomes"
+  venue: "*Plant Ecol. Divers.* **5**: 415-425."
+
+- year: 2012
+  authors: "Piednoel, M., Aberer, A.J., Schneeweiss, G.M., Macas, J., Novak, P., Gundlach, H., Temsch, E.M., Renner, S.S."
+  title: "Next-generation sequencing reveals the impact of repetitive DNA across phylogenetically closely related genomes of Orobanchaceae"
+  venue: "*Mol. Biol. Evol.* **29**: 3601-3611."
+  pdf: "Pidnoel_MBE_2012.pdf"
+
+- year: 2012
+  authors: "Pagan, H.J.T., Macas, J., Novak, P., McCulloch, E.S., Stevens, R.D., Ray, D.A."
+  title: "Survey sequencing reveals elevated DNA transposon activity, novel elements, and variation in repetitive landscapes among bats"
+  venue: "*Genome Biol. Evol.*, **4**: 575-585."
+  url: "http://gbe.oxfordjournals.org/content/4/4/575.full"
+
+- year: 2011
+  authors: "Neumann, P., Navratilova, A., Koblizkova, A., Kejnovsky, E., Hribova, E., Hobza, R., Widmer, A., Dolezel, J., Macas, J."
+  title: "Plant centromeric retrotransposons: a structural and cytogenetic perspective"
+  venue: "*Mobile DNA* **2**: 4."
+  url: "http://www.mobilednajournal.com/content/2/1/4"
+
+- year: 2011
+  authors: "Ambrozova, K., Mandakova, T., Bures, P., Neumann, P., Leitch, I.J., Koblizkova, A., Macas, J., Lysak, M.A."
+  title: "Diverse retrotransposon families and an AT-rich satellite DNA revealed in giant genomes of *Fritillaria* lilies"
+  venue: "*Ann. Bot.* **107**: 255-268."
+  pdf: "Ambrozova_AnnBot_2011.pdf"
+
+- year: 2011
+  authors: "Torres, G.A., Gong, Z., Iovene, M., Hirsch, C.D., Buell, C.R., Bryan, G.J., Novak, P., Macas, J., Jiang, J."
+  title: "Organization and evolution of subtelomeric satellite repeats in the potato genome"
+  venue: "*G3: Genes, Genomes, Genetics* **1**: 85-92."
+  url: "http://www.g3journal.org/content/1/2/85"
+
+- year: 2011
+  authors: "Renny-Byfield, S., Chester, M., Kovarik, A., Le Comber, S.C., Grandbastien, M.A., Deloger, M., Nichols, R., Macas, J., Novak, P., Chase, M.W., Leitch, A.R."
+  title: "Next generation sequencing reveals genome downsizing in allopolyploid *Nicotiana tabacum*, predominantly through the elimination of paternally derived repetitive DNAs"
+  venue: "*Mol. Biol. Evol.* **28**: 2843-2854."
+  pdf: "Renny-Byfield_MBE_2011.pdf"
+
+- year: 2011
+  authors: "Macas, J., Kejnovsky, E., Neumann, P., Novak, P., Koblizkova, A., Vyskot, B."
+  title: "Next generation sequencing-based analysis of repetitive DNA in the model dioecious plant *Silene latifolia*"
+  venue: "*PLoS ONE* **6**: e27335."
+  url: "http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027335"
+
+- year: 2010
+  authors: "Novak, P., Neumann, P., Macas, J."
+  title: "Graph-based clustering and characterization of repetitive sequences in next-generation sequencing data"
+  venue: "*BMC Bioinformatics* **11**: 378."
+  url: "http://www.biomedcentral.com/1471-2105/11/378"
+
+- year: 2010
+  authors: "Macas, J., Neumann, P., Novak, P., Jiang, J."
+  title: "Global sequence characterization of rice centromeric satellite based on oligomer frequency analysis in large-scale sequencing data"
+  venue: "*Bioinformatics* **26**: 2101-2108."
+  pdf: "Macas_Bioinf_10.pdf"
+
+- year: 2010
+  authors: "Hribova, E., Neumann, P., Matsumoto, T., Roux, N., Macas, J., Dolezel, J."
+  title: "Repetitive part of the banana (*Musa acuminata*) genome investigated by low-depth 454 sequencing"
+  venue: "*BMC Plant Biology* **10**: 204."
+  url: "http://www.biomedcentral.com/1471-2229/10/204"
+
+- year: 2009
+  authors: "Macas, J., Koblizkova, A., Navratilova, A., Neumann, P."
+  title: "Hypervariable 3′ UTR region of plant LTR-retrotransposons as a source of novel satellite repeats"
+  venue: "*Gene* **448**: 198-206."
+  pdf: "Macas_Gene_2009.pdf"
+
+- year: 2009
+  authors: "Smykal, P., Kalendar, R., Ford, R., Macas, J., Griga, M."
+  title: "Evolutionary conserved lineage of Angela-family retrotransposons as a genome-wide microsatellite repeat dispersal agent"
+  venue: "*Heredity* **103**: 157-167."
+
+- year: 2008
+  authors: "Navratilova, A., Koblizkova, A., Macas, J."
+  title: "Survey of extrachromosomal circular DNA derived from plant satellite repeats"
+  venue: "*BMC Plant Biol.* **8**: 90."
+  url: "http://www.biomedcentral.com/1471-2229/8/90/"
+
+- year: 2008
+  authors: "Steinbauerova, V., Neumann, P., Macas, J."
+  title: "Experimental evidence for splicing of intron-containing transcripts of plant LTR retrotransposon Ogre"
+  venue: "*Mol. Genet. Genomics* **280**: 427-436."
+  pdf: "Stein_MGG_08.pdf"
+
+- year: 2008
+  authors: "Cermak, T., Kubat, Z., Hobza, R., Koblizkova, A., Widmer, A., Macas, J., Vyskot, B., Kejnovsky, E."
+  title: "Survey of repetitive sequences in *Silene latifolia* with respect to their distribution on sex chromosomes"
+  venue: "*Chromosome Res.* **16**: 961-976."
+
+- year: 2007
+  authors: "Macas, J., Neumann, P., Navratilova, A."
+  title: "Repetitive DNA in the pea (*Pisum sativum* L.) genome: comprehensive characterization using 454 sequencing and comparison to soybean and *Medicago truncatula*"
+  venue: "*BMC Genomics* **8**: 427."
+  url: "http://www.biomedcentral.com/1471-2164/8/427/"
+
+- year: 2007
+  authors: "Macas, J., Neumann, P."
+  title: "Ogre elements – a distinct group of plant Ty3/gypsy-like retrotransposons"
+  venue: "*Gene* **390**: 108-116."
+  pdf: "Macas_Gene_07.pdf"
+
+- year: 2007
+  authors: "Kovarova, P., Navratilova, A., Macas, J., Dolezel, J."
+  title: "Chromosome analysis and sorting in *Vicia sativa* using flow cytometry"
+  venue: "*Biol. Plant.* **51**: 43-48."
+  pdf: "Kovarova_BiolPlant_06.pdf"
+
+- year: 2007
+  authors: "Hribova, E., Dolezelova, M., Town, C.D., Macas, J., Dolezel, J."
+  title: "Isolation and characterization of the highly repeated fraction of the banana genome"
+  venue: "*Cytogenet. Genome Res.* **119**: 268-274."
+
+- year: 2007
+  authors: "Lermontova, I., Schubert, V., Bornke, F., Macas, J., Schubert, I."
+  title: "*Arabidopsis* CBF5 interacts with the H/ACA snoRNP assembly factor NAF1"
+  venue: "*Plant Mol. Biol.* **65**: 615-626."
+
+- year: 2007
+  authors: "Macas, J., Navratilova, A., Kubalakova, M., Dolezel, J."
+  title: "PRINS Applications in Plant Cytogenetics and Genomics"
+  venue: "In: Pellestor, F. (ed.), PRINS and PNA Technologies in Chromosomal Investigation. Nova Science Publishers, Inc., pp. 79-89."
+
+- year: 2006
+  authors: "Neumann, P., Koblizkova, A., Navratilova, A., Macas, J."
+  title: "Significant expansion of *Vicia pannonica* genome size mediated by amplification of a single type of giant retroelement"
+  venue: "*Genetics* **173**: 1047-1056."
+  pdf: "Neumann_Genetics_2006.pdf"
+
+- year: 2006
+  authors: "Macas, J., Navratilova, A., Koblizkova, A."
+  title: "Sequence homogenization and chromosomal localization of VicTR-B satellites differ between closely related *Vicia* species"
+  venue: "*Chromosoma* **115**: 437-447."
+  pdf: "Macas_Chromosoma_06.pdf"
+
+- year: 2006
+  authors: "Kejnovsky, E., Kubat, Z., Macas, J., Hobza, R., Mracek, J., Vyskot, B."
+  title: "RETAND: A novel family of gypsy-like retrotransposon harboring an amplified tandem repeat"
+  venue: "*Mol. Genet. Genomics* **276**: 254-263."
+  pdf: "Kejnovsky_MGG_06.pdf"
+
+- year: 2006
+  authors: "Lee, H.-R., Neumann, P., Macas, J., Jiang, J."
+  title: "Transcription and evolutionary dynamics of the centromeric satellite repeat CentO in rice"
+  venue: "*Mol. Biol. Evol.* **23**: 2505-2520."
+  pdf: "Lee_MBE_06.pdf"
+
+- year: 2006
+  authors: "Lermontova, I., Schubert, V., Fuchs, J., Klatte, S., Macas, J., Schubert, I."
+  title: "Loading of *Arabidopsis* centromeric histone CENH3 occurs mainly during G2 and requires the presence of the histone fold domain"
+  venue: "*Plant Cell* **18**: 2443-2451."
+
+- year: 2006
+  authors: "Macas, J., Navratilova, A., Kubalakova, M., Dolezel, J."
+  title: "PRINS on Plant Chromosomes"
+  venue: "*In*: Pellestor, F. (ed.) – PRINS and In Situ PCR Protocols. Second Edition, Pp. 133-139. Humana Press, Totowa, New Jersey."
+
+- year: 2005
+  authors: "Macas, J., Koblizkova, A., Neumann, P."
+  title: "Characterization of *Stowaway* MITEs in pea (*Pisum sativum* L.) and identification of their potential master elements"
+  venue: "*Genome* **48**: 831-839."
+  pdf: "Macas_Genome_05.pdf"
+
+- year: 2005
+  authors: "Nagaki, K., Neumann, P., Zhang, D., Ouyang, S., Buell, C.R., Cheng, Z., Jiang, J."
+  title: "Structure, divergence, and distribution of the CRR centromeric retrotransposon family in rice"
+  venue: "*Mol. Biol. Evol.* **22**: 845-855."
+
+- year: 2005
+  authors: "Navratilova, A., Neumann, P., Macas, J."
+  title: "Long-range organization of plant satellite repeats investigated using strand-specific FISH"
+  venue: "*Cytogenet. Genome Res.* **109**: 58-62. (see also [Fig. 1](/lamc/publ/Navratilova_CGR_05_Fig1_web.jpg) in better resolution)"
+  pdf: "Navratilova_CGR_05.pdf"
+
+- year: 2005
+  authors: "Neumann, P., Pozarkova, D., Koblizkova, A., Macas, J."
+  title: "*PIGY*, a new plant *envelope*-class LTR retrotransposon"
+  venue: "*Mol. Genet. Genomics* **273**: 43-53."
+  pdf: "Neumann_MGG_05.pdf"
+
+- year: 2005
+  authors: "Tek, A.L., Song, J., Macas, J., Jiang, J."
+  title: "Sobo, a recently amplified satellite repeat of potato, and its implications for the origin of tandemly repeated sequences"
+  venue: "*Genetics* **170**: 1231-1238."
+  pdf: "Tek_Genetics_2005.pdf"
+
+- year: 2005
+  authors: "Dolezel, J., Kubalakova, M., Bartos, J., Macas, J."
+  title: "Chromosome flow sorting and physical mapping"
+  venue: "*In*: Meksem, K., Kahl, G. (eds.) – The Handbook of Plant Genome Mapping. Genetic and Physical Mapping. Pp. 151-171. Wiley-VCH Verlag GmbH & Co. KGaA, Weinheim."
+
+- year: 2004
+  authors: "Dolezel, J., Kubalakova, M., Bartos, J., Macas, J."
+  title: "Flow cytogenetics and plant genome mapping"
+  venue: "*Chromosome Res.* **12**: 77-91."
+  pdf: "Dolezel_ChromRes_04.pdf"
+
+- year: 2004
+  authors: "Lengerova, M., Kejnovsky, E., Hobza, R., Macas, J., Grant, S.R., Vyskot, B."
+  title: "Multicolor FISH mapping of the dioecious model plant, *Silene latifolia*"
+  venue: "*Theor. Appl. Genet.* **108**: 1193-1199."
+
+- year: 2004
+  authors: "Roman, B., Satovic, Z., Pozarkova, D., Macas, J., Dolezel, J., Cubero, J.I., Torres, A.M."
+  title: "Development of a composite map in *Vicia faba*, breeding applications and future prospects"
+  venue: "*Theor. Appl. Genet.* **108**: 1079-1088."
+  pdf: "Roman_TAG_04.pdf"
+
+- year: 2003
+  authors: "Macas, J., Navratilova, A., Meszaros, T."
+  title: "Sequence subfamilies of satellite repeats related to rDNA intergenic spacer are differentially amplified on *Vicia sativa* chromosomes"
+  venue: "*Chromosoma* **112**: 152-158."
+  pdf: "Macas_Chrom_03.pdf"
+
+- year: 2003
+  authors: "Macas, J., Neumann, P., Pozarkova, D."
+  title: "*Zaba*: a novel miniature transposable element present in genomes of legume plants"
+  venue: "*Mol. Genet. Genomics* **269**: 624-631."
+  pdf: "Macas_MGG_03.pdf"
+
+- year: 2003
+  authors: "Navratilova, A., Neumann, P., Macas, J."
+  title: "Karyotype analysis of four *Vicia* species using *in situ* hybridization with repetitive sequences"
+  venue: "*Ann. Bot.* **91**: 921-926."
+  pdf: "Navrat_AnnBot_03.pdf"
+
+- year: 2003
+  authors: "Neumann, P., Pozarkova, D., Macas, J."
+  title: "Highly abundant pea LTR-retrotransposon *Ogre* is constitutively transcribed and partially spliced"
+  venue: "*Plant Mol. Biol.* **53**: 399-410."
+  pdf: "Neumann_PMB_03.pdf"
+
+- year: 2002
+  authors: "Macas, J., Meszaros, T., Nouzova, M."
+  title: "PlantSat: a specialized database for plant satellite repeats"
+  venue: "*Bioinformatics* **18**: 28-35."
+  pdf: "Macas_Bioinf_02.pdf"
+
+- year: 2002
+  authors: "Neumann, P., Pozarkova, D., Vrana, J., Dolezel, J.,Macas, J."
+  title: "Chromosome sorting and PCR-based physical mapping in pea (*Pisum sativum*L.)"
+  venue: "*Chromosome Res.* **10**: 63-71."
+  pdf: "Neumann_ChromRes_2002.pdf"
+
+- year: 2002
+  authors: "Pozarkova, D., Koblizkova, A., Roman, B., Torres, A.M., Lucretti, S., Lysak, M., Dolezel, J., Macas, J."
+  title: "Development and characterization of microsatellite markers from chromosome 1-specific DNA libraries of *Vicia faba.*"
+  venue: "Biol. Plant. **45**: 337-345."
+  pdf: "Pozarkova_BiolPlant_02.pdf"
+
+- year: 2001
+  authors: "Dolezel, J., Lysak, M.A., Kubalakova, M., Simkova, H., Macas, J., Lucretti, S."
+  title: "Sorting of plant chromosomes"
+  venue: "In: Darzynkiewicz, Z., Crissman, H.A., Robinson, J.P. (eds): Methods in Cell Biology. Vol. 64. Third Edition, Part B, pp. 3-31. Academic Press, San Diego."
+
+- year: 2001
+  authors: "Galbraith, D.W., Macas, J., Pierson, E.A., Xu, W., Nouzova, M."
+  title: "Printing DNA microarrays using the Biomek Laboratory Automation Workstation"
+  venue: "In: DNA Arrays: Methods and Protocols (J.B. Rampal, ed.). Methods in Molecular Biology 170:131-140."
+
+- year: 2001
+  authors: "Neumann, P., Nouzova, M., Macas, J."
+  title: "Molecular and cytogenetic analysis of repetitive DNA in pea (*Pisum sativum* L.)"
+  venue: "*Genome*, **44**: 716-728."
+  pdf: "Neumann_Genome_01.pdf"
+
+- year: 2001
+  authors: "Nouzova, M., Neumann, P., Navratilova, A., Galbraith, D.W., Macas, J."
+  title: "Microarray-based survey of repetitive genomic sequences in *Vicia* spp"
+  venue: "*Plant Mol. Biol.* **45**: 229-244."
+  pdf: "Nouzova_PMB_01.pdf"
+
+- year: 2000
+  authors: "Chytilova, E., Macas, J., Sliwinska, E., Rafelski, S.M., Lambert, G.M., Galbraith, D.W."
+  title: "Nuclear dynamics in *Arabidopsis thaliana.*"
+  venue: "*Mol. Biol. Cell* **11**: 2733-2741."
+  pdf: "Chytilova_MBC_00.pdf"
+
+- year: 2000
+  authors: "Macas, J., Pozarkova, D., Navratilova, A., Nouzova, M., Neumann, P."
+  title: "Two new families of tandem repeats isolated from genus *Vicia* using genomic self-priming PCR"
+  venue: "*Mol. Gen. Genet.* **263**: 741-751."
+  pdf: "Macas_MGG_00.pdf"
+
+- year: 1999
+  authors: "Chytilova, E., Macas, J., Galbraith, D.W."
+  title: "Green Fluorescent Protein targeted to the nucleus, a transgenic phenotype useful for studies in plant biology"
+  venue: "*Ann. Bot.* **83**: 645-654."
+  pdf: "Chytilova_AnnBot_99.pdf"
+
+- year: 1999
+  authors: "Dolezel, J., Macas, J., Lucretti, S."
+  title: "Flow Analysis and Sorting of Plant Chromosomes"
+  venue: "– In: Robinson, J.P. et al. (eds.)- Current Protocols in Cytometry, John Wiley & Sons, New York, pp. 5.3.1-5.3.33."
+
+- year: 1999
+  authors: "Macas, J., Nouzova, M., Galbraith, D.W."
+  title: "Adapting the Biomek 2000 Laboratory Automation Workstation for Printing DNA Microarrays"
+  venue: "– In: McClelland, M., Pardee, A., (eds.) – Expression Genetics: Accelerated and High-Throughput Methods, Chapter 2, pp. 13-19, BioTechniques Books, Natick, MA."
+
+- year: 1999
+  authors: "Nouzova, M., Kubalakova, M., Dolezelova, M., Koblizkova, A., Neumann, P., Dolezel, J., Macas, J."
+  title: "Cloning and characterization of new repetitive sequences in field bean (Vicia faba L.)"
+  venue: "*Ann. Bot.* **83**: 535-541. (see also [erratum](/lamc/publ/Nouzova_AnnBot_99er.pdf))"
+  pdf: "Nouzova_AnnBot_99.pdf"
+
+- year: 1999
+  authors: "Vaz Patto, M.C., Torres, A.M., Koblizkova, A., Macas, J., Cubero, J.I."
+  title: "Development of a genetic composite map of Vicia faba using F2 populations derived from trisomic plants"
+  venue: "*Theor. Appl. Genet.* **98**: 736-743."
+  pdf: "VazPatto_TAG_99.pdf"
+
+- year: 1998
+  authors: "Galbraith, D.W., Dolezel, J.,Lambert, G., Macas, J."
+  title: "DNA and ploidy analyses in higher plants"
+  venue: "*In*: Robinson, J.P. et al. (eds.) – Current Protocols in Cytometry, John Wiley & Sons, New York, pp. 7.6.1-7.6.22."
+
+- year: 1998
+  authors: "Koblizkova, A., Dolezel, J., Macas, J."
+  title: "Subtraction with 3′ modified oligonucleotides eliminates amplification artifacts in DNA libraries enriched for microsatellites"
+  venue: "*BioTechniques* **25**: 32-38."
+  pdf: "Koblizkova_Biotech_98.pdf"
+
+- year: 1998
+  authors: "Kubalakova, M., Nouzova, M., Dolezelova, M., Macas, J., Dolezel, J."
+  title: "A combined PRINS-FISH technique for simultaneous localisation of DNA sequences in plant chromosomes"
+  venue: "*Biol. Plant.* **41**: 293-296."
+  pdf: "Kubalakova_BiolPlant_98.pdf"
+
+- year: 1998
+  authors: "Macas, J., Lambert, G.M., Dolezel, D., Galbraith, D.W."
+  title: "NEST (Nuclear Expressed Sequence Tag) analysis: a novel means to study transcription through amplification of nuclear RNA"
+  venue: "*Cytometry* **33**: 460-468."
+  pdf: "Macas_Cytometry_98.pdf"
+
+- year: 1998
+  authors: "Macas, J., Nouzova, M., Galbraith, D.W."
+  title: "Adapting the Biomek 2000 laboratory automation workstation for printing DNA microarrays"
+  venue: "*BioTechniques* **25**: 106-110."
+  pdf: "Macas_Biotech_98.pdf"
+
+- year: 1998
+  authors: "Neumann, P., Lysak, M., Dolezel, J., Macas, J."
+  title: "Isolation of chromosomes from *Pisum sativum* L. hairy root cultures and their analysis by flow cytometry"
+  venue: "*Plant Sci.* **137**: 205-215."
+  pdf: "Neumann_PlantSci_98.pdf"
+
+- year: 1997
+  authors: "Kubalakova, M., Macas, J., Dolezel, J."
+  title: "Mapping of repeated DNA sequences in plant chromosomes by PRINS and C-PRINS"
+  venue: "*Theoretical & Applied Genetics* **94**: 758-763."
+  pdf: "Kubalakova_TAG_97.pdf"
+
+- year: 1996
+  authors: "Gualberti, G., Dolezel, J., Macas, J., Lucretti, S."
+  title: "Preparation of pea (*Pisum sativum* L.) chromosome and nucleus suspensions from single root tips"
+  venue: "*Theor. Appl. Genet.* **92**: 744-751."
+  pdf: "Gualberti_TAG_96.pdf"
+
+- year: 1996
+  authors: "Macas, J., Gualberti, G., Nouzova, M., Samec, P., Lucretti, S., Dolezel, J."
+  title: "Construction of chromosome-specific DNA libraries covering whole genome of field bean (*Vicia faba* L.)"
+  venue: "*Chromosome Res.* **4**: 531-539."
+  pdf: "Macas_ChromRes_96.pdf"
+
+- year: 1995
+  authors: "Dolezel, J., Lucretti, S., Macas, J."
+  title: "Flow-cytometric analysis and sorting of plant chromosomes"
+  venue: "*In*: Brandham,P.E.(ed.) – Kew Chromosome Conference IV (book), Royal Botanic Gardens, Kew."
+
+- year: 1995
+  authors: "Macas, J., Dolezel, J., Gualberti, G., Pich, U., Schubert, I., Lucretti, S."
+  title: "Primer-induced labeling of pea and field bean chromosomes *in situ* and in suspension"
+  venue: "*BioTechniques* **19**: 402-408."
+
+- year: 1995
+  authors: "Pich, U., Meister, A., Macas, J., Dolezel, J., Lucretti, S., Schubert, I."
+  title: "Primed *in situ* labelling facilitates flow sorting of similar sized chromosomes"
+  venue: "*Plant J.* **7**: 1039-1044."
+  pdf: "Pich_PlantJ_95.pdf"
+
+- year: 1993
+  authors: "Macas, J., Dolezel, J., Lucretti, S., Pich, U., Meister, A., Fuchs, J., Schubert, I."
+  title: "Localization of seed protein genes on flow-sorted field bean chromosomes"
+  venue: "*Chromosome Res.* **1**: 107-115."
+  pdf: "Macas_ChromRes_93.pdf"
+
+- year: 1993
+  authors: "Macas, J., Weschke, W., Baumlein, H., Pich, U., Houben, A., Wobus, U., Schubert, I."
+  title: "Localization of vicilin genes via polymerase chain reaction on microisolated field bean chromosomes"
+  venue: "*Plant J.* **3**: 883-886."
+  pdf: "Macas_PlantJ_93.pdf"

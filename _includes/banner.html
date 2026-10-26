@@ -1,0 +1,5 @@
+<div class="banner" aria-hidden="true">
+  {% for img in site.data.banner %}
+  <img src="{{ img | prepend: '/assets/img/' | relative_url }}" alt="" width="1100" height="200"{% unless forloop.first %} loading="lazy"{% endunless %} style="--i: {{ forloop.index0 }}">
+  {% endfor %}
+</div>

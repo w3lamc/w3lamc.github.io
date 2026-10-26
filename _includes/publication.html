@@ -1,0 +1,8 @@
+{% assign p = include.pub %}{% capture base_link %}]({{ site.baseurl }}/{% endcapture %}
+<li class="pub">
+  <span class="pub-authors">{{ p.authors }} ({{ p.year }})</span> &ndash;
+  {% capture title %}{{ p.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}{% endcapture %}
+  {% if p.url %}<a class="pub-title" href="{{ p.url }}">{{ title }}</a>{% elsif p.pdf %}<a class="pub-title" href="{{ p.pdf | prepend: '/lamc/publ/' | relative_url }}">{{ title }}</a>{% else %}<span class="pub-title">{{ title }}</span>{% endif %}.
+  {% if p.venue %}<span class="pub-venue">{{ p.venue | replace: "](/", base_link | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>{% endif %}
+  {% if p.url and p.pdf %}<a class="pub-pdf" href="{{ p.pdf | prepend: '/lamc/publ/' | relative_url }}">[PDF]</a>{% endif %}
+</li>

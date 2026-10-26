@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.legacy_router %}{% include legacy-router.html %}{% endif %}
+  <title>{% if page.title and page.url != "/lamc/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-title" href="{{ '/lamc/' | relative_url }}">{{ site.title }}</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          {% for item in site.data.navigation %}
+          {% assign active = false %}
+          {% if item.url == "/lamc/" %}
+            {% if page.url == "/lamc/" %}{% assign active = true %}{% endif %}
+          {% elsif page.url contains item.url %}
+            {% assign active = true %}
+          {% endif %}
+          <li><a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  {% if page.banner %}{% include banner.html %}{% endif %}
+
+  <main id="content" class="wrap main">
+    {% assign resources = site.data.navigation | where: "url", "/lamc/resources/" | first %}
+    {% if page.url contains "/lamc/resources/" %}
+    <nav class="sub-nav" aria-label="Resources">
+      <ul>
+        {% for item in resources.children %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+    <article class="content">
+      {% unless page.hide_title %}<h1 class="page-title">{{ page.title }}</h1>{% endunless %}
+      {{ content }}
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <address>
+        <strong>{{ site.contact.lab }}</strong><br>
+        <a href="{{ site.contact.institute_url }}">{{ site.contact.institute }}</a><br>
+        <a href="{{ site.contact.centre_url }}">{{ site.contact.centre }}</a><br>
+        {% for line in site.contact.address %}{{ line }}<br>{% endfor %}
+      </address>
+      <address>
+        <strong>Contact person</strong><br>
+        <a href="mailto:{{ site.contact.email }}">{{ site.contact.person }}</a><br>
+        Phone: {{ site.contact.phone }}<br>
+        {% if site.contact.twitter %}<a href="https://twitter.com/{{ site.contact.twitter }}">@{{ site.contact.twitter }}</a>{% endif %}
+      </address>
+    </div>
+  </footer>
+</body>
+</html>
