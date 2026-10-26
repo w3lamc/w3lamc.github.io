@@ -1,0 +1,9 @@
+{% assign resources = site.data.navigation | where: "url", "/lamc/resources/" | first %}
+<div class="cards">
+  {% for item in resources.children %}
+  <a class="card" href="{{ item.url | relative_url }}">
+    <strong>{{ item.title }}</strong>
+    {{ item.description }}
+  </a>
+  {% endfor %}
+</div>

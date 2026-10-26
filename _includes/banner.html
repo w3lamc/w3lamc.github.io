@@ -1,5 +1,5 @@
 {% assign b = site.data.banner[page.banner] %}
-<div class="banner{% if b.images.size > 1 %} banner-rotate{% endif %}" aria-hidden="true" style="aspect-ratio: {{ b.width }} / {{ b.height }}; max-width: {{ b.width }}px">
+<div class="banner{% if b.images.size > 1 %} banner-rotate{% endif %}" aria-hidden="true">
   {% for img in b.images %}
   <img src="{{ img | prepend: '/assets/img/' | relative_url }}" alt="" width="{{ b.width }}" height="{{ b.height }}"{% unless forloop.first %} loading="lazy"{% endunless %} style="--i: {{ forloop.index0 }}">
   {% endfor %}

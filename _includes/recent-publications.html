@@ -1,0 +1,13 @@
+{% comment %} The first entries of _data/publications.yml (newest first). {% endcomment %}
+<ol class="recent-pubs">
+  {% for p in site.data.publications limit: include.count %}
+  <li>
+    <span class="recent-year">{{ p.year }}</span>
+    <div>
+      {% capture title %}{{ p.title | markdownify | remove: "<p>" | remove: "</p>" | strip }}{% endcapture %}
+      {% if p.url %}<a class="pub-title" href="{{ p.url }}">{{ title }}</a>{% elsif p.pdf %}<a class="pub-title" href="{{ p.pdf | prepend: '/lamc/publ/' | relative_url }}">{{ title }}</a>{% else %}<span class="pub-title">{{ title }}</span>{% endif %}
+      <p class="pub-authors">{{ p.authors }}{% if p.venue %} · {{ p.venue | markdownify | remove: "<p>" | remove: "</p>" | strip }}{% endif %}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ol>

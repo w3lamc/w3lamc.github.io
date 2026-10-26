@@ -1,4 +1,5 @@
-# Main menu. "children" are shown as a sub-menu on the Resources pages.
+# Main menu. "children" are shown as a sub-menu on the Resources pages and
+# as cards (with their "description") on the Home and Resources pages.
 - title: Home
   url: /lamc/
 - title: People
@@ -8,11 +9,15 @@
 - title: Resources
   url: /lamc/resources/
   children:
-    - title: Interactive Genome Browser
-      url: /lamc/resources/genome-browser/
     - title: RepeatExplorer
       url: /lamc/resources/repeatexplorer/
+      description: Utilities for graph-based clustering and characterization of repetitive sequences in next-generation sequencing data
     - title: TAREAN
       url: /lamc/resources/tarean/
+      description: Tandem Repeat Analyzer for unsupervised identification of satellite repeats
+    - title: Interactive Genome Browser
+      url: /lamc/resources/genome-browser/
+      description: JBrowse2 views of pea and faba bean genome assemblies
     - title: Data
       url: /lamc/resources/data/
+      description: Sequence data generated in our laboratory
