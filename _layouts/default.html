@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+{% assign design = site.design | default: "dark" %}
+<html lang="en" data-design="{{ design }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +9,11 @@
   <meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {% if design == "botanical" %}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+  {% else %}
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 </head>
@@ -17,7 +22,11 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="site-title" href="{{ '/lamc/' | relative_url }}">
+        {% if design == "botanical" %}
+        <svg class="logo" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 27V13"/><path d="M15 15c-6 0-9-4-9-10 6 0 9 4 9 10z"/><path d="M15 19c5 0 8-3 8-8-5 0-8 3-8 8z"/></svg>
+        {% else %}
         <svg class="logo" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 3c0 7 10 15 10 22M19 3c0 7-10 15-10 22M10 9h8M10 19h8"/></svg>
+        {% endif %}
         <span>{{ site.title }}</span>
       </a>
       <nav class="site-nav" aria-label="Main">
@@ -36,7 +45,9 @@
     </div>
   </header>
 
-  {% if page.banner %}{% include banner.html %}{% endif %}
+  {% assign show_banner = page.banner %}
+  {% if page.photo_grid and site.home_photo_grid %}{% assign show_banner = false %}{% endif %}
+  {% if show_banner %}{% include banner.html %}{% endif %}
 
   <main id="content" class="wrap main">
     {% assign resources = site.data.navigation | where: "url", "/lamc/resources/" | first %}

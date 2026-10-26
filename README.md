@@ -11,13 +11,15 @@ and hosted on GitHub Pages. They replace the former WordPress site.
 | Publications | `_data/publications.yml` (instructions at the top of the file) |
 | Publication PDFs | `lamc/publ/` |
 | People | `lamc/people.md` |
-| Home page text | `lamc/index.md` |
+| Home page text | `lamc/index.html` |
 | Resources pages | `lamc/resources/*.md` |
 | Genome browser table | `_data/genome_browsers.yml` |
 | Zenodo dataset links | `_data/zenodo.yml` |
 | Menu | `_data/navigation.yml` |
 | Contact (footer) | `_config.yml` |
-| Home page banner images | `_data/banner.yml`, `assets/img/` |
+| Page banner images | `_data/banner.yml`, `assets/img/` |
+| Home page photo grid | `_data/home_photos.yml`, `assets/img/` |
+| Site design (`dark` / `botanical`), photo grid on/off | `design` and `home_photo_grid` in `_config.yml` |
 
 Files can be edited directly on GitHub (pencil icon); the site is rebuilt
 automatically within a minute or two after each commit. If a build fails

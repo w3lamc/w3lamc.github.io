@@ -1,0 +1,5 @@
+<figure class="photo-grid">
+  {% for photo in site.data.home_photos %}
+  <img src="{{ photo.file | prepend: '/assets/img/' | relative_url }}" alt="{{ photo.alt | escape }}" width="1100" height="200">
+  {% endfor %}
+</figure>

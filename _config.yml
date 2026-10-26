@@ -8,6 +8,13 @@ description: >-
 baseurl: ""
 url: "https://w3lamc.umbr.cas.cz"
 
+# Look of the whole site: "dark" (Fluorescence) or "botanical" (light, green).
+design: dark
+
+# Home page: true = photo grid next to the headline (images in
+# _data/home_photos.yml); false = rotating banner strip (_data/banner.yml).
+home_photo_grid: true
+
 # Publications with year <= this value are grouped into one
 # "selected publications" section at the end of the Publications page.
 pubs_selected_before: 1997

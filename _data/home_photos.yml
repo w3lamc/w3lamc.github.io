@@ -1,0 +1,13 @@
+# Photo grid on the home page (shown when home_photo_grid: true in _config.yml).
+# Files are in assets/img/. The first photo spans the full width of the grid,
+# the others are shown two per row, so use an odd number (3 or 5).
+- file: unijuga_lusk.jpg
+  alt: Vicia unijuga pods
+- file: lathyrus_latifolius_01-1100x200.jpg
+  alt: Lathyrus latifolius flowers
+- file: pisum_CenH3_cell-cycle.jpg
+  alt: Pea chromosomes with CenH3 signals
+- file: crossing_fulvum_sativum-1100x200.jpg
+  alt: Crossing Pisum fulvum and Pisum sativum
+- file: listy_petricky_02.jpg
+  alt: Leaves of legume species in Petri dishes

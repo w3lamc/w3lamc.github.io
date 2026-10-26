@@ -3,13 +3,17 @@ layout: default
 title: Home
 permalink: /lamc/
 banner: home
+photo_grid: true
 legacy_router: true
 hide_title: true
 ---
-<section class="hero">
+<section class="hero{% if site.home_photo_grid %} hero-split{% endif %}">
+  <div class="hero-text">
   <p class="eyebrow">Institute of Plant Molecular Biology · Biology Centre CAS</p>
   <h1>Sequence composition, molecular organization and evolution of plant genomes and chromosomes</h1>
   <p class="lead">The laboratory examines sequence composition, molecular organization and evolution of plant genomes and chromosomes. Our research is currently centered around the following topics:</p>
+  </div>
+  {% if site.home_photo_grid %}{% include photo-grid.html %}{% endif %}
 </section>
 
 <section class="topics">
