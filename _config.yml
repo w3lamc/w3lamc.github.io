@@ -9,7 +9,7 @@ baseurl: ""
 url: "https://w3lamc.umbr.cas.cz"
 
 # Look of the whole site: "dark" (Fluorescence) or "botanical" (light, green).
-design: dark
+design: botanical
 
 # Home page: true = photo grid next to the headline (images in
 # _data/home_photos.yml); false = rotating banner strip (_data/banner.yml).
