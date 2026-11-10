@@ -4,25 +4,27 @@ title: Data
 permalink: /lamc/resources/data/
 ---
 {%- comment -%}
-  Links to large files and discontinued services (pisum_454, Silene files,
-  PROFREP, PlantSat) are kept as on the former site; 404.html redirects them
-  to Zenodo (see _data/zenodo.yml) or shows an "unavailable" notice.
+  Large files link to the Zenodo record set in _data/zenodo.yml.
+  Links to discontinued services (BLAST, PROFREP) are kept as on the former
+  site; 404.html shows an "unavailable" notice for them.
 {%- endcomment -%}
+{%- assign z = site.data.zenodo -%}
+{%- assign zf = "https://zenodo.org/records/" | append: z.record | append: "/files/" -%}
 <h2>Next generation sequencing of pea (<i>Pisum sativum</i>) genome</h2>
-<p>Data related to the paper <a href="http://www.biomedcentral.com/1471-2164/8/427/">Macas et al. (2007) <i>BMC Genomics</i> <b>8</b>:427</a>.</p>
+<p>Data related to the paper <a href="http://www.biomedcentral.com/1471-2164/8/427/">Macas et al. (2007) <i>BMC Genomics</i> <b>8</b>:427</a>. Files are archived on Zenodo, doi:<a href="https://doi.org/{{ z.doi }}">{{ z.doi }}</a>.</p>
 <ul>
-<li><a href="{{ '/pisum_454/PSC_454Reads.fna' | relative_url }}">454 reads</a> and corresponding <a href="{{ '/pisum_454/PSC_454Reads.qual' | relative_url }}">quality scores</a></li>
+<li><a href="{{ zf }}PSC_454Reads.fna?download=1">454 reads</a> and corresponding <a href="{{ zf }}PSC_454Reads.qual?download=1">quality scores</a></li>
 <li>Assembled <a href="{{ '/lamc/resources/contigs_PSC' | relative_url }}">contig</a> sequences</li>
 <li><a href="{{ '/pisum_454/blast/index.html' | relative_url }}">BLAST search</a> of the 454 reads or contigs assembled from 454 reads</li>
 </ul>
 <h2>Next generation sequencing of <i>Silene latifolia</i> genome</h2>
-<p>Data related to the paper <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027335">Macas et al. (2011) <i>PLoS ONE</i> <b>6</b>: e27335</a>.</p>
+<p>Data related to the paper <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0027335">Macas et al. (2011) <i>PLoS ONE</i> <b>6</b>: e27335</a>. Files are archived on Zenodo, doi:<a href="https://doi.org/{{ z.doi }}">{{ z.doi }}</a>.</p>
 <ul>
-<li>Pre-processed <b>454</b> reads from <a href="{{ '/lamc/resources/SLm_454.fna.zip' | relative_url }}">male</a> and <a href="{{ '/lamc/resources/SLf_454.fna.zip' | relative_url }}">female</a> genome</li>
-<li>Pre-processed <b>Illumina</b> reads from <a href="{{ '/lamc/resources/SLSM.zip' | relative_url }}">male</a> and <a href="{{ '/lamc/resources/SLSF.zip' | relative_url }}">female</a> genome</li>
-<li><a href="{{ '/lamc/resources/silene_454mf_contigs_o50-p84.zip' | relative_url }}">Contigs</a> assembled from 454 reads</li>
-<li>Output of <a href="{{ '/lamc/resources/silene_454_clustering.tar.gz' | relative_url }}">the 454 read clustering and repeat characterization analysis</a> (multiple directories/files, tar.gz compressed, 361 MB)</li>
-<li><a href="{{ '/lamc/resources/silene_repeat-spec_454_blast-dbs.tar.gz' | relative_url }}">Repeat-specific BLAST databases of 454 reads</a> (multiple files, tar.gz compressed). The databases can also be<br>
+<li>Pre-processed <b>454</b> reads from <a href="{{ zf }}SLm_454.fna.zip?download=1">male</a> and <a href="{{ zf }}SLf_454.fna.zip?download=1">female</a> genome</li>
+<li>Pre-processed <b>Illumina</b> reads from <a href="{{ zf }}SLSM.zip?download=1">male</a> and <a href="{{ zf }}SLSF.zip?download=1">female</a> genome</li>
+<li><a href="{{ zf }}silene_454mf_contigs_o50-p84.zip?download=1">Contigs</a> assembled from 454 reads</li>
+<li>Output of <a href="{{ zf }}silene_454_clustering.tar.gz?download=1">the 454 read clustering and repeat characterization analysis</a> (multiple directories/files, tar.gz compressed, 361 MB)</li>
+<li><a href="{{ zf }}silene_repeat-spec_454_blast-dbs.tar.gz?download=1">Repeat-specific BLAST databases of 454 reads</a> (multiple files, tar.gz compressed). The databases can also be<br>
 searched via <a href="{{ '/profrep/public/' | relative_url }}">PROFREP server</a>.</li>
 </ul>
 <h2>PlantSat database</h2>

@@ -13,8 +13,8 @@ legacy_router: true
 
     // Large data files moved to Zenodo (see _data/zenodo.yml)
     var zenodo = {
-      {% for set in site.data.zenodo %}{% assign z = set[1] %}{% if z.record != "" %}{% for f in z.files %}
-      {{ f.old_path | jsonify }}: {{ "https://zenodo.org/records/" | append: z.record | append: "/files/" | append: f.name | append: "?download=1" | jsonify }},{% endfor %}{% endif %}{% endfor %}
+      {% assign z = site.data.zenodo %}{% if z.record != "" %}{% for f in z.files %}
+      {{ f.old_path | jsonify }}: {{ "https://zenodo.org/records/" | append: z.record | append: "/files/" | append: f.name | append: "?download=1" | jsonify }},{% endfor %}{% endif %}
     };
     if (zenodo[path]) { window.location.replace(zenodo[path]); return; }
 

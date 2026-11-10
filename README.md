@@ -52,7 +52,7 @@ repository's *Actions* tab and the previous version stays online.
 | `/lamc/resources.php` | `lamc/resources.php/index.html` (redirect to Resources) |
 | `/lamc/publ/*.pdf`, `/lamc/resources/manual.pdf`, ... | same paths in this repository |
 | `/PlantSat/*` | `404.html` → `PlantSat/index.html` (unavailable notice) |
-| large data files (`/lamc/resources/SLSF.zip`, `/pisum_454/...`) | `404.html` → Zenodo (once records are set in `_data/zenodo.yml`), otherwise an "unavailable" notice |
+| large data files (`/lamc/resources/SLSF.zip`, `/pisum_454/...`) | `404.html` → Zenodo (once the record id is set in `_data/zenodo.yml`), otherwise an "unavailable" notice |
 
 ## Local preview
 
@@ -74,8 +74,9 @@ jekyll serve        # http://127.0.0.1:4000/lamc/
 
 ## Large datasets (Zenodo)
 
-These files are not in the repository; upload them to Zenodo (one record per
-dataset) and put the record ids into `_data/zenodo.yml`:
+These files are not in the repository; they go into one Zenodo record
+(flat file list, checksums in `MD5SUMS`). Put the record id and DOI into
+`_data/zenodo.yml`; old download URLs then redirect to Zenodo.
 
 - Pea (Macas et al. 2007): `PSC_454Reads.fna`, `PSC_454Reads.qual`
   from `http://w3lamc.umbr.cas.cz/pisum_454/`
@@ -83,5 +84,3 @@ dataset) and put the record ids into `_data/zenodo.yml`:
   `SLSM.zip`, `SLSF.zip`, `silene_454mf_contigs_o50-p84.zip`,
   `silene_454_clustering.tar.gz`, `silene_repeat-spec_454_blast-dbs.tar.gz`
   from `http://w3lamc.umbr.cas.cz/lamc/resources/`
-
-Download them from the old server **before** the DNS switch.
