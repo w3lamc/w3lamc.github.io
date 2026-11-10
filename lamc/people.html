@@ -1,0 +1,42 @@
+---
+layout: default
+title: People
+permalink: /lamc/people/
+banner: people
+---
+<ul>
+<li>Jiri Macas (principal investigator, macas@umbr.cas.cz)</li>
+<li>Pavel Neumann (research scientist, neumann@umbr.cas.cz)</li>
+<li>Petr Novak (research scientist, petr@umbr.cas.cz)</li>
+<li>Iva Vrbova (Fukova) (research scientist, ifukova@umbr.cas.cz)</li>
+<li>Ludmila Oliveira (postdoc, lud.oliveira@gmail.com)</li>
+<li>Laura Ávila Robledillo (postdoc, robledillo@umbr.cas.cz)</li>
+<li>Andrea Koblizkova (research assistant, andrea@umbr.cas.cz)</li>
+<li>Tihana Vondrak (Ph.D. student, tihanavondrak12@gmail.com)</li>
+<li>Vlasta Tetourova (technician)</li>
+<li>Jana Latalova (technician)</li>
+<li>Renata Marecova (secretary, renata@umbr.cas.cz)</li>
+</ul>
+<p><strong>Former members of the laboratory</strong></p>
+<ul>
+<li>Jamie McCann (2020)</li>
+<li>Sonja Klemme (2017-2018)</li>
+<li>Nina Hostakova (2016-2018)</li>
+<li>Tae-Soo Jang (2016-2017): Chungnam National University, South Korea</li>
+<li>Katharina Böttinger (2014-2016, BSc)</li>
+<li>Zuzana Pavlikova (2008-2013, MSc)</li>
+<li>Jasper E. Manning (2012-2013): Institute of Molecular Genetics CAS, Prague</li>
+<li>Eva Chocholova (2009-2010, 2013)</li>
+<li>Veronika Steinbauerova (2005-2011, PhD)</li>
+<li>Alice Navratilova (2000-2011, PhD)</li>
+<li>Marek Simonovsky (2002-2005)</li>
+<li>Dana Pozarkova (+2004)</li>
+<li>Tibor Meszaros (1999-2001)</li>
+<li>Marcela Nouzova (1995-2000, PhD): Florida International University, USA</li>
+<li>Susanne M. Rafelski (1999): Allen Institute for Cell Science, Seattle, USA</li>
+<li>Petr Samec (1994-1996)</li>
+<li>Giuliana Gualberti (1995)</li>
+</ul>
+{% assign countries = "czech-republic,croatia,brazil,united-states,austria,italy,south-korea,germany,slovakia,spain" | split: "," -%}
+<p>{% for c in countries %}<img style="float: right;" src="{{ c | prepend: '/assets/img/flags/' | append: '.png' | relative_url }}" alt="{{ c | replace: '-', ' ' | capitalize }}" title="{{ c | replace: '-', ' ' | capitalize }}" width="32" height="32"> {% endfor %}</p>
+<p style="clear: both;"></p>

@@ -1,16 +1,17 @@
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>Species</th><th>Genome browser</th><th>Publication</th></tr>
-  </thead>
-  <tbody>
-    {% for row in site.data.genome_browsers %}
-    <tr>
-      <td>{{ row.species | markdownify | remove: "<p>" | remove: "</p>" | strip }}</td>
-      <td><a href="{{ row.browser_url }}" target="_blank" rel="noopener">Open browser</a></td>
-      <td>{% if row.publication_url %}<a href="{{ row.publication_url }}" target="_blank" rel="noopener">{{ row.publication }}</a>{% else %}{{ row.publication }}{% endif %}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
+{%- comment -%} Rows come from _data/genome_browsers.yml. {%- endcomment -%}
+<table style="max-width: 500px; height: 379px;" width="478">
+<tbody>
+<tr>
+<th>Species</th>
+<th>Genome browser</th>
+<th>Publication</th>
+</tr>
+{% for row in site.data.genome_browsers -%}
+<tr>
+<td>{{ row.species | markdownify | remove: "<p>" | remove: "</p>" | strip }}</td>
+<td><a href="{{ row.browser_url }}" target="_blank">&#128279;</a></td>
+<td>{% if row.publication_url %}<a href="{{ row.publication_url }}" target="_blank">{{ row.publication }}</a>{% else %}{{ row.publication }}{% endif %}</td>
+</tr>
+{% endfor -%}
+</tbody>
 </table>
-</div>

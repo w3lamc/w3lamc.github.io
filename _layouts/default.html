@@ -1,86 +1,118 @@
+{%- comment -%}
+  Reproduces the HTML structure of the former WordPress site
+  (Mantra theme), so that the theme CSS in assets/mantra/ applies unchanged.
+{%- endcomment -%}
+{%- assign is_home = false -%}{%- if page.url == "/lamc/" -%}{%- assign is_home = true -%}{%- endif -%}
+{%- assign nav_parent = nil -%}{%- assign nav_item = nil -%}
+{%- for item in site.data.navigation -%}
+  {%- if item.url == page.url -%}{%- assign nav_item = item -%}{%- endif -%}
+  {%- for child in item.children -%}
+    {%- if child.url == page.url -%}{%- assign nav_item = child -%}{%- assign nav_parent = item -%}{%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
 <!DOCTYPE html>
-{% assign design = site.design | default: "dark" %}
-<html lang="en" data-design="{{ design }}">
+<html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% if page.legacy_router %}{% include legacy-router.html %}{% endif %}
-  <title>{% if page.title and page.url != "/lamc/" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  {% if design == "botanical" %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
-  {% else %}
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
-  {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<meta charset="UTF-8">
+<title>{% if is_home or page.title == nil %}{{ site.title }}{% else %}{{ page.title }} - {{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description | strip_newlines | escape }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% if page.legacy_router %}{% include legacy-router.html %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/mantra/style.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/mantra/options.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/mantra/style-mobile.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/mantra/slider.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/mantra/site.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<script src="{{ '/assets/mantra/site.js' | relative_url }}" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#content">Skip to content</a>
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="site-title" href="{{ '/lamc/' | relative_url }}">
-        {% if design == "botanical" %}
-        <svg class="logo" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 27V13"/><path d="M15 15c-6 0-9-4-9-10 6 0 9 4 9 10z"/><path d="M15 19c5 0 8-3 8-8-5 0-8 3-8 8z"/></svg>
-        {% else %}
-        <svg class="logo" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 3c0 7 10 15 10 22M19 3c0 7-10 15-10 22M10 9h8M10 19h8"/></svg>
-        {% endif %}
-        <span>{{ site.title }}</span>
-      </a>
-      <nav class="site-nav" aria-label="Main">
-        <ul>
-          {% for item in site.data.navigation %}
-          {% assign active = false %}
-          {% if item.url == "/lamc/" %}
-            {% if page.url == "/lamc/" %}{% assign active = true %}{% endif %}
-          {% elsif page.url contains item.url %}
-            {% assign active = true %}
-          {% endif %}
-          <li><a href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="{% if is_home %}home {% endif %}page{% if nav_item %} page-id-{{ nav_item.wp_id }}{% if nav_parent %} page-child parent-pageid-{{ nav_parent.wp_id }}{% elsif nav_item.children %} page-parent{% endif %}{% endif %} page-template-default">
 
-  {% assign show_banner = page.banner %}
-  {% if page.photo_grid and site.home_photo_grid %}{% assign show_banner = false %}{% endif %}
-  {% if show_banner %}{% include banner.html %}{% endif %}
+<div id="toTop"> </div>
+<div id="wrapper" class="hfeed">
 
-  <main id="content" class="wrap main">
-    {% assign resources = site.data.navigation | where: "url", "/lamc/resources/" | first %}
-    {% if page.url contains "/lamc/resources/" %}
-    <nav class="sub-nav" aria-label="Resources">
-      <ul>
-        {% for item in resources.children %}
-        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-    {% endif %}
-    <article class="content">
-      {% unless page.hide_title %}<h1 class="page-title">{{ page.title }}</h1>{% endunless %}
-      {{ content }}
-    </article>
-  </main>
+<header id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+				<div id="header-container">
+					<div><h1 id="site-title"><span> <a href="{{ '/lamc/' | relative_url }}" title="{{ site.title }}" rel="home">{{ site.title }}</a> </span></h1><div id="site-description"></div></div>
+				</div>
+				<div style="clear:both;"></div>
+			</div><!-- #branding -->
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <address>
-        <strong>{{ site.contact.lab }}</strong><br>
-        <a href="{{ site.contact.institute_url }}">{{ site.contact.institute }}</a><br>
-        <a href="{{ site.contact.centre_url }}">{{ site.contact.centre }}</a><br>
-        {% for line in site.contact.address %}{{ line }}<br>{% endfor %}
-      </address>
-      <address>
-        <strong>Contact person</strong><br>
-        <a href="mailto:{{ site.contact.email }}">{{ site.contact.person }}</a><br>
-        Phone: {{ site.contact.phone }}<br>
-        {% if site.contact.twitter %}<a href="https://twitter.com/{{ site.contact.twitter }}">@{{ site.contact.twitter }}</a>{% endif %}
-      </address>
-    </div>
-  </footer>
+			<nav id="access" class="jssafe" role="navigation">
+				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+				<div class="menu">{% include page-menu.html top=true %}</div>
+			</nav><!-- #access -->
+		</div><!-- #masthead -->
+	<div style="clear:both;"> </div>
+</header><!-- #header -->
+
+<div id="main">
+	<div id="forbottom">
+		{% if page.banner %}{% include banner.html %}{% endif %}
+		<div style="clear:both;"> </div>
+
+		<section id="container">
+			<div id="content" role="main">
+				<div class="breadcrumbs">{% unless is_home %}<a href="{{ '/lamc' | relative_url }}">{{ site.title }} &raquo; </a>{% if nav_parent %}<a href="{{ nav_parent.url | relative_url }}">{{ nav_parent.title }} &raquo; </a>{% endif %}{{ page.title }}{% endunless %}</div>
+
+				<div class="page type-page status-publish hentry">
+					{% if is_home %}<h2 class="entry-title">{{ page.title }}</h2>{% else %}<h1 class="entry-title">{{ page.title }}</h1>{% endif %}
+					<div class="entry-content">
+{{ content }}
+					</div><!-- .entry-content -->
+				</div>
+			</div><!-- #content -->
+
+			<div id="primary" class="widget-area" role="complementary">
+				<ul class="xoxo">
+					<li id="search-2" class="widget-container widget_search">
+						<form method="get" id="searchform" action="https://www.google.com/search">
+							<input type="hidden" name="as_sitesearch" value="{{ site.url | remove: 'https://' | remove: 'http://' }}{{ site.baseurl }}/lamc">
+							<input type="text" value="Search" name="q" id="s" onblur="if (this.value == '') {this.value = 'Search';}" onfocus="if (this.value == 'Search') {this.value = '';}">
+							<input type="submit" id="searchsubmit" value="OK">
+						</form>
+					</li>
+				</ul>
+
+				<ul class="xoxo">
+					<li id="pages-6" class="widget-container widget_pages"><h3 class="widget-title">Pages</h3>
+						{% include page-menu.html %}
+					</li>
+					{% if is_home %}{% comment %} The original site showed the Contact box on the home page only. {% endcomment %}
+					<li id="wysiwyg_widgets_widget-3" class="widget-container widget_wysiwyg_widgets_widget">
+						<h3 class="widget-title">Contact</h3>
+						<address>{{ site.contact.lab }}<br>
+<a href="{{ site.contact.institute_url }}" target="_blank">{{ site.contact.institute }}</a><br>
+<a href="{{ site.contact.centre_url }}" target="_blank">{{ site.contact.centre }}</a><br>
+{% for line in site.contact.address %}{{ line }}{% unless forloop.last %}<br>
+{% endunless %}{% endfor %}</address>
+<address>&nbsp;</address>
+<address><strong>Contact person:</strong></address>
+<address><a href="mailto:{{ site.contact.email }}" target="_blank">{{ site.contact.person }}</a><br>
+Phone: {{ site.contact.phone }}</address>
+<address>&nbsp;</address>
+<address>&nbsp;</address>
+{% if site.contact.twitter %}<p><a class="twitter-follow-button" href="https://twitter.com/{{ site.contact.twitter }}" data-lang="en" data-show-count="false">Follow @{{ site.contact.twitter }}</a><script src="https://platform.twitter.com/widgets.js" async charset="utf-8"></script></p>{% endif %}
+					</li>{% endif %}
+				</ul>
+			</div><!-- #primary .widget-area -->
+		</section><!-- #container -->
+
+	<div style="clear:both;"></div>
+	</div> <!-- #forbottom -->
+</div><!-- #main -->
+
+<footer id="footer" role="contentinfo">
+	<div id="colophon"></div>
+	<div id="footer2">
+		<div style="text-align:center;clear:both;padding-top:4px;">
+			<a href="{{ '/lamc/' | relative_url }}" title="{{ site.title }}" rel="home">{{ site.title }}</a> | Powered by <a target="_blank" href="https://www.cryoutcreations.eu" title="Mantra Theme by Cryout Creations">Mantra</a> &amp; <a target="_blank" href="https://jekyllrb.com/">Jekyll.</a>
+		</div><!-- #site-info -->
+	</div><!-- #footer2 -->
+</footer><!-- #footer -->
+
+</div><!-- #wrapper -->
 </body>
 </html>

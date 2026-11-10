@@ -27,7 +27,7 @@ legacy_router: true
     // Discontinued dynamic services
     if (/^\/(pisum_454|profrep|repeatexplorer|lamc\/resources\/(SL|silene))/i.test(path)) {
       document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector(".page-title").textContent = "Temporarily unavailable";
+        document.querySelector(".entry-title").textContent = "Temporarily unavailable";
         document.title = "Temporarily unavailable | " + {{ site.title | jsonify }};
         document.getElementById("not-found").hidden = true;
         document.getElementById("unavailable").hidden = false;

@@ -1,6 +1,10 @@
+{%- comment -%} Image slider (markup and classes of the former Meta Slider / FlexSlider). {%- endcomment -%}
 {% assign b = site.data.banner[page.banner] %}
-<div class="banner{% if b.images.size > 1 %} banner-rotate{% endif %}" aria-hidden="true">
-  {% for img in b.images %}
-  <img src="{{ img | prepend: '/assets/img/' | relative_url }}" alt="" width="{{ b.width }}" height="{{ b.height }}"{% unless forloop.first %} loading="lazy"{% endunless %} style="--i: {{ forloop.index0 }}">
-  {% endfor %}
+<div style="max-width: {{ b.width }}px;" class="metaslider metaslider-flex ml-slider nav-hidden">
+	<div class="flexslider" data-interval="{{ b.interval | default: 3000 }}" data-fade="{{ b.fade | default: 600 }}">
+		<ul class="slides">
+			{% for img in b.images %}<li{% if forloop.first %} class="flex-active-slide"{% endif %}><img src="{{ img.file | prepend: '/assets/img/' | relative_url }}" height="{{ b.height }}" width="{{ b.width }}" alt="">{% if img.caption %}<div class="caption-wrap"><div class="caption">{{ img.caption }}</div></div>{% endif %}</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>

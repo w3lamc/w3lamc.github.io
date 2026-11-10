@@ -1,24 +1,29 @@
-# Page banners (files in assets/img/). A page shows a banner when its
-# front matter contains e.g. "banner: home". Several images rotate;
-# all images of one banner should have the same size (width x height px).
+# Image slider shown above the page content (files in assets/img/).
+# A page shows a slider when its front matter contains e.g. "banner: home".
+# With more than one image the slides change every "interval" milliseconds
+# with a cross-fade lasting "fade" milliseconds. All images of one slider
+# should have the same size (width x height px). "caption" is optional.
 home:
   width: 1100
   height: 200
+  interval: 5000
+  fade: 2300
   images:
-    - pisum_CenH3_cell-cycle.jpg
-    - listy_petricky_02.jpg
-    - unijuga_lusk.jpg
-    - crossing_fulvum_sativum-1100x200.jpg
-    - lathyrus_latifolius_01-1100x200.jpg
+    - file: pisum_CenH3_cell-cycle.jpg
+    - file: listy_petricky_02.jpg
+    - file: unijuga_lusk.jpg
+    - file: crossing_fulvum_sativum-1100x200.jpg
+    - file: lathyrus_latifolius_01-1100x200.jpg
 
 people:
   width: 1100
   height: 250
   images:
-    - IMG_2462_uprav_web_lab_Sep_2018.jpg
+    - file: IMG_2462_uprav_web_lab_Sep_2018.jpg
+      caption: "(September 2018) J. Macas, T. Vondrak, S. Klemme, L. Avila Robledillo, V. Tetourová, J. Látalová, P. Neumann, P. Novák, A. Koblížková"
 
 publications:
   width: 1200
   height: 200
   images:
-    - wordcloud_2.png
+    - file: wordcloud_2.png

@@ -10,16 +10,19 @@ and hosted on GitHub Pages. They replace the former WordPress site.
 |---|---|
 | Publications | `_data/publications.yml` (instructions at the top of the file) |
 | Publication PDFs | `lamc/publ/` |
-| People | `lamc/people.md` |
+| People | `lamc/people.html` |
 | Home page text | `lamc/index.html` |
-| Resources pages | `lamc/resources/*.md` |
+| Resources pages | `lamc/resources/*.html` |
 | Genome browser table | `_data/genome_browsers.yml` |
 | Zenodo dataset links | `_data/zenodo.yml` |
-| Menu | `_data/navigation.yml` |
-| Contact (footer) | `_config.yml` |
-| Page banner images | `_data/banner.yml`, `assets/img/` |
-| Home page photo grid | `_data/home_photos.yml`, `assets/img/` |
-| Site design (`dark` / `botanical`), photo grid on/off | `design` and `home_photo_grid` in `_config.yml` |
+| Menu and sidebar page list | `_data/navigation.yml` |
+| Contact (sidebar on the home page) | `_config.yml` |
+| Slider images above pages | `_data/banner.yml`, `assets/img/` |
+
+The look reproduces the former WordPress site (Mantra theme by Cryout
+Creations, GPLv2). The theme CSS and images are copied unchanged into
+`assets/mantra/`; `site.css` and `site.js` there replace the jQuery-based
+slider, back-to-top button and small-screen menu.
 
 Files can be edited directly on GitHub (pencil icon); the site is rebuilt
 automatically within a minute or two after each commit. If a build fails
@@ -45,11 +48,11 @@ repository's *Actions* tab and the previous version stays online.
 
 | Old URL | Handled by |
 |---|---|
-| `/lamc/?page_id=N` | `_includes/legacy-router.html` (redirect to new page) |
+| `/lamc/?page_id=N` | `_includes/legacy-router.html` (redirect to new page, ids in `_data/navigation.yml`) |
 | `/lamc/resources.php` | `lamc/resources.php/index.html` (redirect to Resources) |
 | `/lamc/publ/*.pdf`, `/lamc/resources/manual.pdf`, ... | same paths in this repository |
 | `/PlantSat/*` | `404.html` → `PlantSat/index.html` (unavailable notice) |
-| large data files (`/lamc/resources/SLSF.zip`, `/pisum_454/...`) | `404.html` → Zenodo (once records are set in `_data/zenodo.yml`) |
+| large data files (`/lamc/resources/SLSF.zip`, `/pisum_454/...`) | `404.html` → Zenodo (once records are set in `_data/zenodo.yml`), otherwise an "unavailable" notice |
 
 ## Local preview
 

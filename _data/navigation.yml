@@ -1,23 +1,29 @@
-# Main menu. "children" are shown as a sub-menu on the Resources pages and
-# as cards (with their "description") on the Home and Resources pages.
+# Main menu (top menu and the "Pages" box in the sidebar). "children" form
+# the drop-down sub-menu. "wp_id" is the page id of the former WordPress
+# site; it is used for CSS classes and for redirecting old /lamc/?page_id=N
+# links.
 - title: Home
   url: /lamc/
+  wp_id: 4
 - title: People
   url: /lamc/people/
+  wp_id: 10
 - title: Publications
   url: /lamc/publications/
+  wp_id: 6
 - title: Resources
   url: /lamc/resources/
+  wp_id: 8
   children:
-    - title: RepeatExplorer
-      url: /lamc/resources/repeatexplorer/
-      description: Utilities for graph-based clustering and characterization of repetitive sequences in next-generation sequencing data
-    - title: TAREAN
-      url: /lamc/resources/tarean/
-      description: Tandem Repeat Analyzer for unsupervised identification of satellite repeats
     - title: Interactive Genome Browser
       url: /lamc/resources/genome-browser/
-      description: JBrowse2 views of pea and faba bean genome assemblies
+      wp_id: 557
+    - title: RepeatExplorer
+      url: /lamc/resources/repeatexplorer/
+      wp_id: 301
+    - title: TAREAN
+      url: /lamc/resources/tarean/
+      wp_id: 312
     - title: Data
       url: /lamc/resources/data/
-      description: Sequence data generated in our laboratory
+      wp_id: 317

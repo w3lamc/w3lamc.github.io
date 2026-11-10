@@ -1,0 +1,19 @@
+/* Additions to the Mantra theme for the static site. */
+
+/* Fading slider (replaces the FlexSlider script). */
+.metaslider .flexslider .slides > li {
+  width: 100%; float: left; margin: 0 -100% 0 0; position: relative;
+  display: block; opacity: 0; z-index: 1;
+  transition-property: opacity; transition-timing-function: ease;
+}
+.metaslider .flexslider .slides > li.flex-active-slide { opacity: 1; z-index: 2; }
+
+/* Back-to-top button (shown once the page is scrolled). */
+#toTop { opacity: 0; display: block; visibility: hidden; transition: opacity 1.5s, visibility 0s 1.5s, background .2s; }
+#toTop.visible { opacity: 1; visibility: visible; transition: opacity 1.5s, background .2s; }
+
+/* Links to data or services that are not available on the static site. */
+.unavailable { color: #888; font-style: italic; }
+.pending { color: #888; border-bottom: 1px dotted #888; cursor: help; }
+.notice { border-left: 4px solid #0D85CC; background: #f4f8fb; padding: 10px 15px; margin-bottom: 1.5em; }
+#content .notice p { margin-bottom: 0.5em; }

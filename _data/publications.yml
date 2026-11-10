@@ -9,17 +9,24 @@
 #     title: "Title of the paper"       # required, no trailing period
 #     venue: "*Journal* **12**: 1-10."  # optional, journal / volume / pages
 #     url: "https://doi.org/10.xxxx"    # optional, link on the title
-#     pdf: "Novak_Journal_2026.pdf"     # optional, file placed in lamc/publ/
+#     pdf: "Novak_Journal_2026.pdf"     # optional, file in lamc/publ/, used
+#                                       # as the title link when url is absent
+#     note: "(see also [erratum](/lamc/publ/X.pdf))"  # optional, after venue
 #
 #   Text may use Markdown: *italic*, **bold**, [link text](https://...).
-#   If both url and pdf are given, the title links to url and a [PDF] link
-#   is added. Entries with year <= 1997 are shown in a single
-#   "selected publications" section (see pubs_selected_before in _config.yml).
+#   Entries with year <= 1997 are shown in a single "selected publications"
+#   section (see pubs_selected_before in _config.yml).
+
+- year: 2026
+  authors: "Novak, P., Macas, J."
+  title: "TideCluster: clustering and classification of tandem repeats for comparative and pangenomic analysis"
+  venue: "*bioRxiv DOI:10.64898/2026.11.06.764801*"
+  url: "https://doi.org/10.64898/2026.11.06.764801"
 
 - year: 2026
   authors: "Kreplak,J., Novak, P., Avila Robledillo, L., Aubert,G., Imbert, B., Kaur, P., Gouil, Q., Lopez-Roques, C., Rodde, N., Bouchez, O., Tayeh, N., Macas,J., Burstin,J."
   title: "A new genome assembly of the pea cultivar Cameor provides resources for functional genomics and genetics"
-  venue: "*Sci. Data*, DOI:10.1038/s41597-026-07347-4"
+  venue: "*Sci. Data* **13**:1079"
   url: "https://doi.org/10.1038/s41597-026-07347-4"
 
 - year: 2026
@@ -316,8 +323,9 @@
 
 - year: 2016
   authors: "Kumke, K., Macas, J., Fuchs, J., Altschmied, L., Kour, J., Dhar, M.K., Houben, A."
-  title: "*[Plantago lagopus ](publ/Kumke_CGR_2016.pdf)*[B chromosome is enriched in 5S rDNA-derived satellite DNA](publ/Kumke_CGR_2016.pdf)"
+  title: "*Plantago lagopus* B chromosome is enriched in 5S rDNA-derived satellite DNA"
   venue: "*Cytogenet. Genome Res.* **148**: 68-73."
+  pdf: "Kumke_CGR_2016.pdf"
 
 - year: 2016
   authors: "Kowar, T., Zakrzewski, F., Macas, J., Koblizkova, A., Viehoever, P., Weisshaar, B., Schmidt, T."
@@ -482,7 +490,7 @@
   url: "http://www.biomedcentral.com/1471-2164/13/722/"
 
 - year: 2012
-  authors: "Banaei-Moghaddam, A.M., Schubert, V., Kumke, K., WeiÃŸ, O., Klemme, S., Nagaki, K., Macas, J., GonzÃ¡lez-SÃ¡nchez, M., Heredia, V., GÃ³mez-Revilla, D., GonzÃ¡lez-GarcÃ­a, M., Vega, J.M., Puertas, M.J., Houben, A."
+  authors: "Banaei-Moghaddam, A.M., Schubert, V., Kumke, K., Weiß, O., Klemme, S., Nagaki, K., Macas, J., González-Sánchez, M., Heredia, V., Gómez-Revilla, D., González-García, M., Vega, J.M., Puertas, M.J., Houben, A."
   title: "Nondisjuction in favour of a chromosome – the mechanism of rye B chromosome drive during pollen mitosis"
   venue: "*Plant Cell* **24**: 4124-4134."
 
@@ -615,8 +623,7 @@
 
 - year: 2007
   authors: "Macas, J., Navratilova, A., Kubalakova, M., Dolezel, J."
-  title: "PRINS Applications in Plant Cytogenetics and Genomics"
-  venue: "In: Pellestor, F. (ed.), PRINS and PNA Technologies in Chromosomal Investigation. Nova Science Publishers, Inc., pp. 79-89."
+  title: "PRINS Applications in Plant Cytogenetics and Genomics. In: Pellestor, F. (ed.), PRINS and PNA Technologies in Chromosomal Investigation. Nova Science Publishers, Inc., pp. 79-89"
 
 - year: 2006
   authors: "Neumann, P., Koblizkova, A., Navratilova, A., Macas, J."
@@ -666,8 +673,9 @@
 - year: 2005
   authors: "Navratilova, A., Neumann, P., Macas, J."
   title: "Long-range organization of plant satellite repeats investigated using strand-specific FISH"
-  venue: "*Cytogenet. Genome Res.* **109**: 58-62. (see also [Fig. 1](/lamc/publ/Navratilova_CGR_05_Fig1_web.jpg) in better resolution)"
+  venue: "*Cytogenet. Genome Res.* **109**: 58-62."
   pdf: "Navratilova_CGR_05.pdf"
+  note: "(see also [Fig. 1](/lamc/publ/Navratilova_CGR_05_Fig1_web.jpg) in better resolution)"
 
 - year: 2005
   authors: "Neumann, P., Pozarkova, D., Koblizkova, A., Macas, J."
@@ -747,13 +755,11 @@
 
 - year: 2001
   authors: "Dolezel, J., Lysak, M.A., Kubalakova, M., Simkova, H., Macas, J., Lucretti, S."
-  title: "Sorting of plant chromosomes"
-  venue: "In: Darzynkiewicz, Z., Crissman, H.A., Robinson, J.P. (eds): Methods in Cell Biology. Vol. 64. Third Edition, Part B, pp. 3-31. Academic Press, San Diego."
+  title: "Sorting of plant chromosomes. In: Darzynkiewicz, Z., Crissman, H.A., Robinson, J.P. (eds): Methods in Cell Biology. Vol. 64. Third Edition, Part B, pp. 3-31. Academic Press, San Diego"
 
 - year: 2001
   authors: "Galbraith, D.W., Macas, J., Pierson, E.A., Xu, W., Nouzova, M."
-  title: "Printing DNA microarrays using the Biomek Laboratory Automation Workstation"
-  venue: "In: DNA Arrays: Methods and Protocols (J.B. Rampal, ed.). Methods in Molecular Biology 170:131-140."
+  title: "Printing DNA microarrays using the Biomek Laboratory Automation Workstation. In: DNA Arrays: Methods and Protocols (J.B. Rampal, ed.). Methods in Molecular Biology 170:131-140"
 
 - year: 2001
   authors: "Neumann, P., Nouzova, M., Macas, J."
@@ -787,19 +793,18 @@
 
 - year: 1999
   authors: "Dolezel, J., Macas, J., Lucretti, S."
-  title: "Flow Analysis and Sorting of Plant Chromosomes"
-  venue: "– In: Robinson, J.P. et al. (eds.)- Current Protocols in Cytometry, John Wiley & Sons, New York, pp. 5.3.1-5.3.33."
+  title: "Flow Analysis and Sorting of Plant Chromosomes. – In: Robinson, J.P. et al. (eds.)- Current Protocols in Cytometry, John Wiley & Sons, New York, pp. 5.3.1-5.3.33"
 
 - year: 1999
   authors: "Macas, J., Nouzova, M., Galbraith, D.W."
-  title: "Adapting the Biomek 2000 Laboratory Automation Workstation for Printing DNA Microarrays"
-  venue: "– In: McClelland, M., Pardee, A., (eds.) – Expression Genetics: Accelerated and High-Throughput Methods, Chapter 2, pp. 13-19, BioTechniques Books, Natick, MA."
+  title: "Adapting the Biomek 2000 Laboratory Automation Workstation for Printing DNA Microarrays. – In: McClelland, M., Pardee, A., (eds.) – Expression Genetics: Accelerated and High-Throughput Methods, Chapter 2, pp. 13-19, BioTechniques Books, Natick, MA"
 
 - year: 1999
   authors: "Nouzova, M., Kubalakova, M., Dolezelova, M., Koblizkova, A., Neumann, P., Dolezel, J., Macas, J."
   title: "Cloning and characterization of new repetitive sequences in field bean (Vicia faba L.)"
-  venue: "*Ann. Bot.* **83**: 535-541. (see also [erratum](/lamc/publ/Nouzova_AnnBot_99er.pdf))"
+  venue: "*Ann. Bot.* **83**: 535-541."
   pdf: "Nouzova_AnnBot_99.pdf"
+  note: "(see also [erratum](/lamc/publ/Nouzova_AnnBot_99er.pdf))"
 
 - year: 1999
   authors: "Vaz Patto, M.C., Torres, A.M., Koblizkova, A., Macas, J., Cubero, J.I."
@@ -887,3 +892,4 @@
   title: "Localization of vicilin genes via polymerase chain reaction on microisolated field bean chromosomes"
   venue: "*Plant J.* **3**: 883-886."
   pdf: "Macas_PlantJ_93.pdf"
+
